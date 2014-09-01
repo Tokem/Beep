@@ -1,0 +1,6 @@
+<Alloy>
+    <NavigationWindow id="win1" platform="ios" class="container" layout="vertical" zIndex="90">
+        <Window id="win2" title="GERAL" zIndex="2">
+        </Window>
+    </NavigationWindow>
+</Alloy>

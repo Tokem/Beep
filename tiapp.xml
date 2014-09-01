@@ -5,7 +5,7 @@
     <version>1.0</version>
     <publisher>danielmarques</publisher>
     <url>http://vainobeep.com</url>
-    <description/>
+    <description>undefined</description>
     <copyright>2014 by danielmarques</copyright>
     <icon>appicon.png</icon>
     <fullscreen>false</fullscreen>
@@ -47,7 +47,10 @@
         </splash>
         <theme>default</theme>
     </mobileweb>
-    <modules/>
+    <modules>
+        <module platform="android">facebook</module>
+        <module platform="iphone">facebook</module>
+    </modules>
     <deployment-targets>
         <target device="android">true</target>
         <target device="blackberry">false</target>

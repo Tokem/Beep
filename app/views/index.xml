@@ -1,5 +1,16 @@
 <Alloy>
 	<Window class="container">
-		<Label id="label" onClick="doClick">Hello, World</Label>
+		<ScrollableView id="scrollview" showPagingControl="true" pagingControlAlpha="0.8" backgroundColor="#FFF" backgroundImage="/images/outros/background.png">
+            <View layout="vertical">
+            	
+      		</View>
+            <View layout="vertical">
+            	
+            </View>
+            <View layout="vertical">
+            	
+            </View>
+        </ScrollableView>
+        <Button top="350dp" onClick="loginClick">Login</Button>
 	</Window>
 </Alloy>

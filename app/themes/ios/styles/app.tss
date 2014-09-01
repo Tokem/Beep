@@ -1,0 +1,20 @@
+// Layouts
+".vert":{ layout :"vertical" },
+".hor": { layout :"horizontal" },
+
+//Aligns
+".left": { textAlign: "LEFT" },
+".right": { textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT },
+
+//Fonts 
+".font-10":{ font:{ fontSize: "10dp"} },
+".font-11":{ font:{ fontSize: "11dp"} },
+".font-12":{ font:{ fontSize: "12dp"} }, 
+".font-13":{ font:{ fontSize: "13dp"} },
+".font-14":{ font:{ fontSize: "14dp"} },
+
+//Colors 
+".titulo" :{ color: "#000" },
+".subtitulo" :{ color: "#767676" },
+
+
