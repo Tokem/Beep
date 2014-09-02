@@ -8,7 +8,7 @@
 				<Label class="font-10 subtitulo left"  width="100%"> 3700 beeps </Label>	
 			</View>
 		</View>
-	 	<ListView canScroll="false" left="-15dp" defaultItemTemplate="template" separatorStyle="Titanium.UI.iPhone.ListViewSeparatorStyle.NONE">
+	 	<ListView canScroll="true" left="-15dp" defaultItemTemplate="template" separatorStyle="Titanium.UI.iPhone.ListViewSeparatorStyle.NONE">
 	 		<Templates>
                 <ItemTemplate name="template" class="hor" layout="vertical">
                 	<ImageView bindId="icon"></ImageView>

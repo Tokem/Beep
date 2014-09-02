@@ -21,7 +21,8 @@ var animateRight    = Ti.UI.createAnimation({
 
 // Create a Button.
 var notificationButton = Ti.UI.createButton({
-	image: 'system/icones/menu.png'
+	image: 'system/icones/notification.png',
+	width: '20dp', height: '20dp'
 });
 
 notificationButton.addEventListener('click', function() {
@@ -52,4 +53,4 @@ $.win1.addEventListener('postlayout', function(){
 
 function onclick(){
 	alert('\'leftButton\' was clicked!');
-}
+} 

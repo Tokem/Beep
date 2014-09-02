@@ -1,16 +1,40 @@
 <Alloy>
 	<Window class="container">
 		<ScrollableView id="scrollview" showPagingControl="true" pagingControlAlpha="0.8" backgroundColor="#FFF" backgroundImage="/images/outros/background.png">
-            <View layout="vertical">
-            	
+            <View backgroundImage="/system/background/wizard_01.png">
+            	<View class="wizard vert" bottom="50dp">
+		        	<Label class="wizard-label bold font-16" backgroundPaddingTop="3dp">BEM-VINDO!</Label>
+		        	<Label class="wizard-label font-12">Bem-vindo ao Beep, seu</Label>
+		        	<Label class="wizard-label font-12">termômetro de festas.</Label>
+		        </View>
       		</View>
-            <View layout="vertical">
-            	
+            <View backgroundImage="/system/background/wizard_02.png">
+            	<View class="wizard vert" bottom="50dp">
+		        	<Label class="wizard-label bold font-16" backgroundPaddingTop="3dp">Descubra e Compare!</Label>
+		        	<Label class="wizard-label font-12">Saiba quais as melhores</Label>
+		        	<Label class="wizard-label font-12">festas ao seu redor</Label>
+		        	<Label class="wizard-label font-12">Sinta como elas estão faladas</Label>
+		        	<Label class="wizard-label font-12">e compare-as.</Label>
+		        </View>           
+		    </View>
+            <View backgroundImage="/system/background/wizard_03.png">
+            	<View class="wizard vert" bottom="50dp">
+		        	<Label class="wizard-label bold font-16" backgroundPaddingTop="3dp">Clube  de Vantagens.</Label>
+		        	<Label class="wizard-label font-12">Faça parte de um vasto</Label>
+		        	<Label class="wizard-label font-12">clube de vantagens com</Label>
+		        	<Label class="wizard-label font-12">acúmulo de pontos</Label>
+		        	<Label class="wizard-label font-12">e descontos.</Label>
+		        </View>
             </View>
-            <View layout="vertical">
-            	
-            </View>
-        </ScrollableView>
-        <Button top="350dp" onClick="loginClick">Login</Button>
+        </ScrollableView>     
+        
+        <Button class="font-12 bold register" onClick="showRegister">Cadastre-se no Beep!</Button>
+        <Button class="font-12 bold login" onClick="loginClick" >Login</Button>
+       	
+       	<View id="form" backgroundImage="/system/background/opacity.png" width="100%" height="100%" top="0" left="0" visible="false">
+			<View id="login">
+				
+			</View>
+       	</View> 
 	</Window>
 </Alloy>

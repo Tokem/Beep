@@ -1,3 +1,4 @@
+"Label":{ color: 'white' },
 // Layouts
 ".vert":{ layout :"vertical" },
 ".hor": { layout :"horizontal" },
@@ -12,9 +13,20 @@
 ".font-12":{ font:{ fontSize: "12dp"} }, 
 ".font-13":{ font:{ fontSize: "13dp"} },
 ".font-14":{ font:{ fontSize: "14dp"} },
+".font-16":{ font:{ fontSize: "16dp"} },
+".font-18":{ font:{ fontSize: "18dp"} },
+
+".bold": { font: {fontWeight :"bold"} },
 
 //Colors 
 ".titulo" :{ color: "#000" },
 ".subtitulo" :{ color: "#767676" },
 
+//Buttons
+".register": {left: "20dp", bottom: "50dp", backgroundImage: "/system/buttons/register.png", width: "170dp"},
+".login": {right: "20dp",  bottom: "50dp",color: "#767676", backgroundImage: "/system/buttons/login.png", width: "90dp"},
+
+//Labels
+".wizard": { left: "25dp", width: '200dp', bottom: '90dp', height:"120dp" },
+".wizard-label":{ left:'0dp', backgroundPaddingRight: '5dp', backgroundPaddingLeft: "5dp", backgroundImage: "/system/background/opacity.png" }
 

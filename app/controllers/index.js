@@ -4,4 +4,8 @@ function loginClick(){
 	$.index.close();
 }
 
+function showRegister(){
+	$.form.visible = true;
+}
+
 $.index.open();
