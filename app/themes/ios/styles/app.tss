@@ -30,3 +30,4 @@
 ".wizard": { left: "25dp", width: '200dp', bottom: '90dp', height:"120dp" },
 ".wizard-label":{ left:'0dp', backgroundPaddingRight: '5dp', backgroundPaddingLeft: "5dp", backgroundImage: "/system/background/opacity.png" }
 
+
