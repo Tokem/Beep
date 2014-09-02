@@ -25,12 +25,12 @@ items.push({
 
 items.push({      
 	label : { text : "Lista" },
-	icon: { image:"/system/icones/festas_passadas.png",	height: iconHeight,	left: '30dp' }
+	icon: { image:"/system/icones/listas.png",	height: iconHeight,	left: '30dp' }
 });
    
 items.push({      
-	label : { text : "Clube de Vantagens" }
-	
+	label : { text : "Clube de Vantagens" },
+	icon: { image:"/system/icones/clube_vantagens.png",	height: iconHeight,	left: '30dp' }
 });
 
 items.push({       
@@ -47,10 +47,5 @@ items.push({
 	label : { text : "Sair" },
 	icon: { image:"/system/icones/sair.png",	height: iconHeight,	left: '30dp' }
 });
-   
-   
-   
-   
-   
   
 $.section.setItems(items);

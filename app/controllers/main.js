@@ -10,13 +10,13 @@ var menuButton = Ti.UI.createButton({
 var animateLeft = Ti.UI.createAnimation({
     left: "250dp",
     curve: Ti.UI.ANIMATION_CURVE_EASE_OUT,
-    duration: 500
+    duration: 300
 });
 
 var animateRight    = Ti.UI.createAnimation({
     left: 0,
     curve: Ti.UI.ANIMATION_CURVE_EASE_OUT,
-    duration: 500
+    duration: 300
 });
 
 // Create a Button.
@@ -29,7 +29,14 @@ notificationButton.addEventListener('click', function() {
 });
 
 menuButton.addEventListener('click', function() {
-	$.win1.animate(animateLeft);
+	
+	if(!Alloy.Globals.toogle){
+		$.win1.animate(animateLeft);
+		Alloy.Globals.toogle = true;
+	}else{
+		$.win1.animate(animateRight);
+		Alloy.Globals.toogle = false;
+	}
 });
 
 $.win1.width = "100%";
@@ -42,3 +49,7 @@ navMenu.open();
 $.win1.addEventListener('postlayout', function(){
 	navMenu.left = 0;
 });
+
+function onclick(){
+	alert('\'leftButton\' was clicked!');
+}
