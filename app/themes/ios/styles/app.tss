@@ -15,6 +15,4 @@
 
 //Colors 
 ".titulo" :{ color: "#000" },
-".subtitulo" :{ color: "#767676" },
-
-
+".subtitulo" :{ color: "#767676" }
