@@ -1,11 +1,11 @@
 <Alloy>
-    <NavigationWindow id="win1" platform="ios" class="container" layout="vertical" zIndex="90">
-        <Window id="win2" title="GERAL" zIndex="2">        
+    <NavigationWindow id="nav" platform="ios" class="container" layout="vertical" zIndex="90">
+        <Window id="content" title="GERAL" zIndex="2">        
         	<View backgroundColor="#f2f2f2" height="36dp" top="0dp">
         	</View>
         	<ScrollView class="vert" top="36dp" contentHeight="auto" scrollingEnabled="true" showVerticalScrollIndicator="true" >
         		<View class="hor" top="10"  height="100dp">
-        			<Button width="105dp" height="105dp" class="vert" onClick="onclick">
+        			<Button width="105dp" height="105dp" class="vert" onClick="onclick" evento="ramon">
         				<ImageView image="/system/background/list.png" left="5dp" right="5dp"></ImageView>
         			</Button>
        				<Button width="105dp" height="105dp" class="vert" onClick="onclick">

@@ -1,13 +1,16 @@
-"Label":{ color: 'white' },
 // Layouts
 ".vert":{ layout :"vertical" },
 ".hor": { layout :"horizontal" },
+".container": {backgroundColor: "#FFF"},
+// Others
+".border":{ width: "100%", backgroundColor: "#d2d2d2", height: '1dp'},
 
 //Aligns
 ".left": { textAlign: "LEFT" },
 ".right": { textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT },
 
 //Fonts 
+".font-8":{ font:{ fontSize: "8dp"} },
 ".font-10":{ font:{ fontSize: "10dp"} },
 ".font-11":{ font:{ fontSize: "11dp"} },
 ".font-12":{ font:{ fontSize: "12dp"} }, 
@@ -27,6 +30,7 @@
 ".login": {right: "20dp",  bottom: "50dp",color: "#767676", backgroundImage: "/system/buttons/login.png", width: "90dp"},
 
 //Labels
+"Label":{ color: 'white' },
 ".wizard": { left: "25dp", width: '200dp', bottom: '90dp', height:"120dp" },
 ".wizard-label":{ left:'0dp', backgroundPaddingRight: '5dp', backgroundPaddingLeft: "5dp", backgroundImage: "/system/background/opacity.png" }
 

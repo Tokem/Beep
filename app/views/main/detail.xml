@@ -1,0 +1,17 @@
+<Alloy>
+	<Window title="" backButtonTitle="" class="container" layout="vertical">
+		<View backgroundColor="#F2F2F2" height="365dp" top="0dp" layout="vertical">
+			<ImageView left="15dp" right="15dp" top="10dp" image="/system/background/list_detail.png"></ImageView>
+			<View width="150dp" top="10dp" layout="vertical" height="15dp">
+				<Label class="font-8 subtitulo">Última atualização ás 20:40</Label>
+				<View class="border"></View>
+			</View>
+			<View class="hor" top="10dp" height="20dp" >
+				<Button width="33%" height="20dp"><ImageView image="/system/icones/detail_list.png" width="20dp" height="20dp"></ImageView></Button>
+				<Button width="33%" height="20dp"><ImageView image="/system/icones/info.png" width="20dp" height="20dp"></ImageView></Button>
+				<Button width="33%" height="20dp"><ImageView image="/system/icones/shared.png" width="20dp" height="20dp"></ImageView></Button>
+			</View>
+		</View>
+		<View class="border" ></View>
+	</Window>
+</Alloy>

@@ -32,25 +32,26 @@ notificationButton.addEventListener('click', function() {
 menuButton.addEventListener('click', function() {
 	
 	if(!Alloy.Globals.toogle){
-		$.win1.animate(animateLeft);
+		$.nav.animate(animateLeft);
 		Alloy.Globals.toogle = true;
 	}else{
-		$.win1.animate(animateRight);
+		$.nav.animate(animateRight);
 		Alloy.Globals.toogle = false;
 	}
 });
 
-$.win1.width = "100%";
-$.win2.leftNavButton = menuButton;
-$.win2.rightNavButton = notificationButton;
+$.nav.width = "100%";
+$.content.leftNavButton = menuButton;
+$.content.rightNavButton = notificationButton;
 
 var navMenu = Alloy.createController('navMenu').getView();
 navMenu.open();
 
-$.win1.addEventListener('postlayout', function(){
+$.nav.addEventListener('postlayout', function(){
 	navMenu.left = 0;
 });
 
 function onclick(){
-	alert('\'leftButton\' was clicked!');
+	var detail =  Alloy.createController('main/detail').getView();
+	$.nav.openWindow(detail, {animated : true});
 } 
