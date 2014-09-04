@@ -2,6 +2,7 @@
 ".vert":{ layout :"vertical" },
 ".hor": { layout :"horizontal" },
 ".container": {backgroundColor: "#FFF"},
+".navigation":{ tintColor: "#696969"},
 // Others
 ".border":{ width: "100%", backgroundColor: "#d2d2d2", height: '1dp'},
 
@@ -11,6 +12,7 @@
 
 //Fonts 
 ".font-8":{ font:{ fontSize: "8dp"} },
+".font-9":{ font:{ fontSize: "9dp"} },
 ".font-10":{ font:{ fontSize: "10dp"} },
 ".font-11":{ font:{ fontSize: "11dp"} },
 ".font-12":{ font:{ fontSize: "12dp"} }, 

@@ -1,11 +1,14 @@
 <Alloy>
 	<Window class="container" width="250dp" left="-250dp" backgroundColor="#FFF" layout="vertical" >
 		<View backgroundColor="#f2f2f2" height="100dp" layout="horizontal">
-			<View width="80dp"></View>
-			<View width="170dp" height="50dp" layout="vertical" >
-				<Label class="font-14 titulo left" width="100%"> André morette</Label>		
-				<Label class="font-10 subtitulo left"  width="100%"> Usuário ouro </Label>	
-				<Label class="font-10 subtitulo left"  width="100%"> 3700 beeps </Label>	
+			<View width="50dp" height="100dp" left="30dp" >
+				<ImageView width="60dp" height="60dp" image="/system/background/user.png"></ImageView>
+				<ImageView width="60dp" height="60dp" image="/system/background/mascara.png"></ImageView>
+			</View>
+			<View width="170dp" height="40dp" layout="vertical" >
+				<Label class="font-14 titulo left" width="80%"> André morette</Label>		
+				<Label class="font-10 subtitulo left"  width="80%"> Usuário ouro </Label>	
+				<Label class="font-10 subtitulo left"  width="80%"> 3700 beeps </Label>	
 			</View>
 		</View>
 	 	<ListView canScroll="true" left="-15dp" defaultItemTemplate="template" separatorStyle="Titanium.UI.iPhone.ListViewSeparatorStyle.NONE">
