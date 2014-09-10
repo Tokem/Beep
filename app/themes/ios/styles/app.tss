@@ -3,6 +3,8 @@
 ".hor": { layout :"horizontal" },
 ".container": {backgroundColor: "#FFF"},
 ".navigation":{ tintColor: "#696969"},
+".nav-login":{ tintColor: "#be0e4f"},
+
 // Others
 ".border":{ width: "100%", backgroundColor: "#d2d2d2", height: '1dp'},
 
@@ -24,16 +26,24 @@
 ".bold": { font: {fontWeight :"bold"} },
 
 //Colors 
-".titulo" :{ color: "#000" },
-".subtitulo" :{ color: "#767676" },
+".titulo": { color: "#000" },
+".subtitulo": { color: "#767676" },
 
 //Buttons
 ".register": {left: "20dp", bottom: "50dp", backgroundImage: "/system/buttons/register.png", width: "170dp"},
 ".login": {right: "20dp",  bottom: "50dp",color: "#767676", backgroundImage: "/system/buttons/login.png", width: "90dp"},
+".btn-cancel": { backgroundImage:"/system/buttons/btn-cancel.png", width: "47%", left: 0, color:"#FFF"},
+
+".btn-confirm": { backgroundImage:"/system/buttons/btn-entrar.png",width: "47%", right: 0, color:"#FFF"},
+".btn-confirm-large": { backgroundImage:"/system/buttons/btn-entrar-large.png",width: "47%", right: 0, color:"#FFF"},
+
+".login-fb": { top:"20", height: "30dp", backgroundImage: "/system/buttons/fb-login.png", width: "75%", textAlign: Titanium.UI.TEXT_ALIGNMENT_RIGHT},
+".forgot": {width:"100%", top:"30dp", color: "#3a5a97"},
 
 //Labels
-"Label":{ color: 'white' },
+"Label":{ color: 'white',font: {fontFamily: 'MuseoSans_700'} },
 ".wizard": { left: "25dp", width: '200dp', bottom: '90dp', height:"120dp" },
-".wizard-label":{ left:'0dp', backgroundPaddingRight: '5dp', backgroundPaddingLeft: "5dp", backgroundImage: "/system/background/opacity.png" }
+".wizard-label":{ left:'0dp', backgroundPaddingRight: '5dp', backgroundPaddingLeft: "5dp", backgroundImage: "/system/background/opacity.png" },
 
-
+//Inputs
+".input-text": {height:"30dp", top: "5dp", left: "15dp", right: "15dp", font: {fontFamily:"MuseoSans-300" } }

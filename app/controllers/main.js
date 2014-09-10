@@ -27,49 +27,57 @@ var notificationButton = Ti.UI.createButton({
 // Label title
 var titleLabel = Titanium.UI.createLabel({
     color:'#696969',
-    text:'GERAL',
+    text:'Geral',
     textAlign:'center',
-    shadowColor:'#eee',shadowOffset:{x:0,y:1}
+    font: { fontSize: "16dp", fontWeight: 'bold'}
 });
 
 $.content.setTitleControl(titleLabel);
 
 var activeMenuTop  = $.btnActive;
-$.nav.width = "100%";
+$.mainNav.width = "100%";
 $.content.leftNavButton = menuButton;
 $.content.rightNavButton = notificationButton;
 
 var navMenu = Alloy.createController('navMenu').getView();
 navMenu.open();
 
-//Events
+//Events 
+
+// Anima o menu 
 function animateMenu(){
 	if(!Alloy.Globals.toogle){
-		$.nav.animate(animateLeft);
+		$.mainNav.animate(animateLeft);
 		Alloy.Globals.toogle = true;
 		$.content.children[0].visible = true;
-		$.nav.tintColor = "#FFF";
+		$.mainNav.tintColor = "#FFF";
 	}else{
-		$.nav.animate(animateRight);
+		$.mainNav.animate(animateRight);
 		Alloy.Globals.toogle = false;
 		$.content.children[0].visible = false;
-		$.nav.tintColor = "#696969";
+		$.mainNav.tintColor = "#696969";
 	}	
 }
 
+// Evento do menu caixa de mensagem
 notificationButton.addEventListener('click', function() {
 	alert('\'leftButton\' was clicked!');
 });
 
+
+//Click do menu 
 menuButton.addEventListener('click', function() {	
 	animateMenu();
 });
 
-$.nav.addEventListener('postlayout', function(){
+
+//Apos renderizar a tela principal ele colocar o menu na posicao 0
+$.mainNav.addEventListener('postlayout', function(){
 	navMenu.left = 0;
 });
 
-$.nav.addEventListener('swipe', function(e){
+// Funcao do swipe (quando desliza o dedo esquerda->direita, direita->esquerda)
+$.mainNav.addEventListener('swipe', function(e){
 	if(e.direction == "right"){
 		if(Alloy.Globals.toogle == true){
 			animateMenu();
@@ -85,9 +93,9 @@ $.nav.addEventListener('swipe', function(e){
 	animateMenu();
 });
 
+
 function onclick(){
-	var detail =  Alloy.createController('main/detail').getView();
-	$.nav.openWindow(detail, {animated : true});
+	Alloy.Globals.openWindow({name: "main/detail", subview: true});
 } 
 
 function eventoDblClick(){

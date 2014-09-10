@@ -10,3 +10,23 @@
 //
 // Alloy.Globals.someGlobalFunction = function(){};
 Alloy.Globals.toogle = false;
+
+var _screen = [];
+
+Alloy.Globals.openWindow = function(screen){
+	if(screen.subview){
+		var current = _screen[_screen.length -1];
+		var win = Alloy.createController(screen.name).getView();
+		current.openWindow(win, {animated : true});	
+		//_screen.push(win);			
+	}else{
+		var win = Alloy.createController(screen.name).getView();
+		_screen.push(win);
+		win.open();
+	}
+};
+
+Alloy.Globals.closeWindow = function(){
+	var win = _screen.pop();
+	win.close();
+};

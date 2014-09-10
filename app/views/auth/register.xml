@@ -1,0 +1,33 @@
+<Alloy>
+	<NavigationWindow id="navRegister" class="container vert">
+	    <Window id="winRegister"  barColor="#9a003a" backgroundColor="#be0d4f" class="vert" tintColor="#FFFFFF">
+			<View left="30dp" right="30dp" top="40dp" class="vert">
+				
+				<View height="165dp" backgroundImage="/system/background/bg-login.png" layout="vertical">
+					<TextField hintText="Usuário" class="font-11 input-text"></TextField>
+					<View left="15dp" right="15dp" height="1dp" bottom="5dp" top="0dp" backgroundColor="#dddbdb"></View>
+					
+					<TextField hintText="Email" class="font-11 input-text" ></TextField>
+					<View left="15dp" right="15dp" height="1dp" bottom="5dp" top="0dp" backgroundColor="#dddbdb"></View>
+					
+					<TextField hintText="Senha" class="font-11 input-text" ></TextField>
+					<View left="15dp" right="15dp" height="1dp" bottom="5dp" top="0dp" backgroundColor="#dddbdb"></View>
+					
+					<TextField hintText="Confirmar senha" class="font-11 input-text" ></TextField>
+				</View>	
+						
+				<View top="30dp" height="30dp">
+					<Button class="btn-confirm-large bold" width="100%">Continuar</Button>
+				</View>
+				
+				<Button class="login-fb font-12" onClick="facebookClick"></Button>
+				
+				<Button class="font-11 forgot" color="white" > Termos de Política e Privacidade</Button>
+				
+				<View width="84%" class="hor" height="20dp" top="30dp">
+					<View width="10dp" height="10dp" right="10dp" backgroundColor="#FFF"></View><Label class="font-10"> Li e concordo com os termos e condições</Label>
+				</View>
+			</View>
+	    </Window>
+    </NavigationWindow>
+</Alloy>

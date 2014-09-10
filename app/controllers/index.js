@@ -1,11 +1,9 @@
 function loginClick(){
-	var main = Alloy.createController('main').getView();
-	main.open();
-	$.index.close();
+	Alloy.Globals.openWindow({name: "auth/login"});
 }
 
-function showRegister(){
-	$.form.visible = true;
+function registerClick(){
+	Alloy.Globals.openWindow({name: "auth/register"});
 }
 
 $.index.open();

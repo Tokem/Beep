@@ -1,7 +1,6 @@
 <Alloy>
 	<Window id="detalhe" backButtonTitle="" class="container navigation vert">
 		<View backgroundColor="#F2F2F2" height="365dp" top="0dp" layout="vertical">
-			
 			<ImageView left="15dp" right="15dp" top="10dp" image="/system/background/list_detail.png"></ImageView>
 			<View width="150dp" top="10dp" layout="vertical" height="15dp">
 				<Label class="font-8 subtitulo">Última atualização ás 20:40</Label>

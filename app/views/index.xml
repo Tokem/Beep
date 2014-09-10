@@ -28,7 +28,7 @@
             </View>
         </ScrollableView>     
         
-        <Button class="font-12 bold register" onClick="showRegister">Cadastre-se no Beep!</Button>
+        <Button class="font-12 bold register" onClick="registerClick">Cadastre-se no Beep!</Button>
         <Button class="font-12 bold login" onClick="loginClick" >Login</Button>
        	
        	<View id="form" backgroundImage="/system/background/opacity.png" width="100%" height="100%" top="0" left="0" visible="false">

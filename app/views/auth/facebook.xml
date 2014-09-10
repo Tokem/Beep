@@ -1,0 +1,27 @@
+<Alloy>
+ 	<NavigationWindow class="container vert">
+		 <Window id="winFacebook" barColor="#9a003a" backgroundColor="#be0d4f" class="vert">
+			<View left="30dp" right="30dp" top="50dp" bottom="20dp" class="vert">
+				<View layout="" height="100dp" width="100dp" backgroundColor="#FFF">
+	    			<ImageView height="100dp" width="100dp" image="/system/background/user.png"></ImageView>
+	   				<ImageView height="40dp" width="40dp" bottom="10dp" image="/system/icones/perfil-edit.png"></ImageView>
+	    		</View>
+	    		
+				<View height="125dp" class="vert" backgroundImage="/system/background/bg-login.png" top="30dp">
+					<TextField hintText="Primeiro nome" class="font-11 input-text"></TextField>
+					
+					<View left="15dp" right="15dp" height="1dp" bottom="5dp" top="0dp" backgroundColor="#dddbdb"></View>
+					<TextField hintText="Último nome" class="font-11 input-text" ></TextField>
+					
+					<View left="15dp" right="15dp" height="1dp" bottom="5dp" top="0dp" backgroundColor="#dddbdb"></View>
+					<TextField hintText="Email" class="font-11 input-text" ></TextField>
+				</View>	
+						
+				<View top="30dp" height="30dp">
+					<Button class="btn-cancel bold" >Cancelar</Button>
+					<Button class="btn-confirm bold">Entrar</Button>
+				</View>
+			</View>
+	    </Window>
+    </NavigationWindow>
+</Alloy>
