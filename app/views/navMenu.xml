@@ -1,6 +1,6 @@
 <Alloy>
-	<Window class="container" width="250dp" left="-250dp" backgroundColor="#FFF" layout="vertical" >
-		<View backgroundColor="#f2f2f2" height="100dp" layout="horizontal">
+	<View class="container" width="250dp" left="0" top="0" backgroundColor="#FFF" layout="vertical" >
+		<View backgroundColor="#f2f2f2" height="99dp" layout="horizontal">
 			<View width="50dp" height="100dp" left="30dp" >
 				<ImageView width="60dp" height="60dp" image="/system/background/user.png"></ImageView>
 				<ImageView width="60dp" height="60dp" image="/system/background/mascara.png"></ImageView>
@@ -23,5 +23,5 @@
 	            <ListItem template="template" ></ListItem>
 	        </ListSection>
 	    </ListView>
-	</Window>
+	</View>
 </Alloy>

@@ -1,0 +1,26 @@
+<Alloy>
+	<View class="container navigation-white vert">		
+		<View height="60dp" top="0dp" width="100%" backgroundColor="#9a003a" layout="Vertical"> 
+    		<View height="20dp"  width="100%"></View>
+    		<View height="40dp">
+    			<Button left="5dp" zIndex="4" height="20dp" width="40dp" image="/system/icones/back.png" onClick="back"></Button>
+    			<Label class="titulo-white bold">Perfil</Label>
+    		</View>
+	    </View>
+	    <ScrollView class="vert">
+	    	<View width="180dp" height="180dp" borderRadius="90dp" top="50dp">
+	    		<ImageView image="/system/outros/perfil-image.png" width="180dp" height="180dp"></ImageView>
+	    		<View width="150dp" height="30dp" backgroundColor="#be0d4f" bottom="0dp" >
+	    			<Button image="/system/icones/edit.png" width="40dp" height="20dp"></Button>  		
+	    		</View>
+	    	</View>
+	    	
+	    	<View left="10dp" right="10dp" backgroundColor="#be0d4f" height="50dp" top="30dp" borderRadius="10dp">
+	    		<TextField left="10dp" width="200dp" class="font-14 white" hintText="Daniel Marques"></TextField>
+	    		<View width="1dp" height="5dp" right="41dp" backgroundColor="#FFF"></View>
+	    		<Button image="/system/icones/edit.png" width="40dp" height="20dp" right="0dp"></Button> 
+	    	</View>
+
+	    </ScrollView>
+	</View>
+</Alloy>

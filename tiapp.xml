@@ -9,7 +9,7 @@
     <copyright>2014 by danielmarques</copyright>
     <icon>appicon.png</icon>
     <fullscreen>false</fullscreen>
-    <navbar-hidden>false</navbar-hidden>
+    <navbar-hidden>true</navbar-hidden>
     <analytics>true</analytics>
     <guid>b8dfe03a-e837-461f-a99f-10197e45d7f2</guid>
     <property name="ti.ui.defaultunit" type="string">dp</property>
@@ -38,7 +38,13 @@
             </dict>
         </plist>
     </ios>
-    <android xmlns:android="http://schemas.android.com/apk/res/android"/>
+<android xmlns:android="http://schemas.android.com/apk/res/android">
+    <manifest>
+        <!--application android:theme="@style/Theme.NoActionBar"/>
+        <Need to specify at least API level 11 for Titanium SDK 3.2.x and prior -->
+        <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="19"/>
+    </manifest>
+</android>
     <mobileweb>
         <precache/>
         <splash>
@@ -61,6 +67,6 @@
     </deployment-targets>
     <sdk-version>3.3.0.GA</sdk-version>
     <plugins>
-        <plugin version="1.0">ti.alloy</plugin>
+        <plugin version="1.4">ti.alloy</plugin>
     </plugins>
 </ti:app>

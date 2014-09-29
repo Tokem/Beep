@@ -52,17 +52,34 @@ $.section.setItems(items);
 
 $.menuList.addEventListener('itemclick', function(e){
 	var index = e.itemIndex;
-	Ti.API.log(e);
-	
+
 	switch (index) {
 		case 0:
-		    alert('red');
+		     Alloy.Globals.openContent({name: "menu/perfil/index"});
 		    break;
 		case 1:
-		    alert('green');
+		     Alloy.Globals.openContent({name: "menu/conta/index"});
+		    break;
+		case 2:
+		     Alloy.Globals.openContent({name: "menu/passadas/index"});
+		    break;
+		case 3:
+		     Alloy.Globals.openContent({name: "menu/favoritos/index"});
+		    break;
+		case 4:
+		     Alloy.Globals.openContent({name: "menu/lista/index"});
+		    break;
+		case 5:
+		     Alloy.Globals.openContent({name: "menu/clube/index"});
+		    break;
+		case 6:
+		     Alloy.Globals.openContent({name: "menu/config/index"});
+		    break;
+		case 7:
+		    Alloy.Globals.openContent({name: "menu/suporte/index"});
 		    break;
 		case 8:
-			Ti.API.log('aqui');
+		     alert("Sair");
 		    break;
 		    
 		default:

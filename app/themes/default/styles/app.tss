@@ -1,0 +1,54 @@
+// Layouts
+".vert":{ layout :"vertical" },
+".hor": { layout :"horizontal" },
+".container": {backgroundColor: "#FFF"},
+".navigation":{ tintColor: "#696969"},
+".nav-login":{ tintColor: "#be0e4f"},
+
+// Others
+".border":{ width: "100%", backgroundColor: "#d2d2d2", height: '1dp'},
+
+//Aligns
+".left": { textAlign: "LEFT" },
+".right": { textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT },
+
+//Fonts 
+".font-8":{ font:{ fontSize: "8dp"} },
+".font-9":{ font:{ fontSize: "9dp"} },
+".font-10":{ font:{ fontSize: "10dp"} },
+".font-11":{ font:{ fontSize: "11dp"} },
+".font-12":{ font:{ fontSize: "12dp"} }, 
+".font-13":{ font:{ fontSize: "13dp"} },
+".font-14":{ font:{ fontSize: "14dp"} },
+".font-16":{ font:{ fontSize: "16dp"} },
+".font-18":{ font:{ fontSize: "18dp"} },
+
+".bold": { font: {fontWeight :"bold"} },
+
+//Colors 
+".titulo": { color: "#696969", font:{fontSize: "14dp", fontFamily: 'MuseoSans-700'} },
+".titulo-white": { color: "#FFF", font:{fontSize: "16dp", fontFamily: 'MuseoSans-700'} },
+".subtitulo": { color: "#767676" },
+".gray": { color: "#767676" },
+
+//Buttons
+".register": {left: "20dp", bottom: "50dp", backgroundImage: "/system/buttons/register.png", width: "170dp"},
+".login": {right: "20dp",  bottom: "50dp",color: "#767676", backgroundImage: "/system/buttons/login.png", width: "90dp"},
+".btn-cancel": { backgroundImage:"/system/buttons/btn-cancel.png", width: "47%", left: 0, color:"#FFF"},
+
+".btn-confirm": { backgroundImage:"/system/buttons/btn-entrar.png",width: "47%", right: 0, color:"#FFF"},
+".btn-confirm-large": { backgroundImage:"/system/buttons/btn-entrar-large.png",width: "47%", right: 0, color:"#FFF"},
+
+".login-fb": { top:"20", height: "30dp", backgroundImage: "/system/buttons/fb-login.png", width: "75%", textAlign: Titanium.UI.TEXT_ALIGNMENT_RIGHT},
+".forgot": {width:"100%", top:"30dp", color: "#3a5a97"},
+
+//Labels
+"Label":{ color: 'white',font: {fontFamily: 'MuseoSans-700'} },
+".wizard": { left: "25dp", width: '200dp', bottom: '90dp', height:"120dp" },
+".wizard-label":{ left:'0dp', backgroundPaddingRight: '5dp', backgroundPaddingLeft: "5dp", backgroundImage: "/system/background/opacity.png" },
+
+//Inputs
+".input-text": {height:"30dp", top: "5dp", left: "15dp", right: "15dp", font: {fontFamily:"MuseoSans-300" } },
+".input-button": {font: {fontFamily:"MuseoSans-500" } },
+".input-title": {font: {fontFamily:"MuseoSans-700" } },
+

@@ -1,0 +1,24 @@
+<Alloy>
+	<View class="container navigation-white vert">		
+		<View height="60dp" top="0dp" width="100%" backgroundColor="#9a003a" layout="Vertical"> 
+    		<View height="20dp"  width="100%"></View>
+    		<View height="40dp">
+    			<Button left="5dp" zIndex="4" height="20dp" width="40dp" image="/system/icones/back.png" onClick="back"></Button>
+    			<Label class="titulo-white bold">Informações da Conta</Label>
+    		</View>
+	    </View>
+	    
+	 	<ListView id="configList" canScroll="true" left="-15dp" defaultItemTemplate="template" separatorColor="transparent">
+	 		<Templates>
+                <ItemTemplate name="template" class="hor" layout="vertical">
+                	<ImageView bindId="icon"></ImageView>
+                    <Label bindId="label" class="font-14 titulo left gray" width="60%"></Label>
+                    <View bottom="0" height="1" backgroundColor="#e9e9e9" width="100%"></View>
+                </ItemTemplate>
+            </Templates>
+	        <ListSection id="section">
+	            <ListItem template="template" ></ListItem>
+	        </ListSection>
+	    </ListView>
+	</View>
+</Alloy>

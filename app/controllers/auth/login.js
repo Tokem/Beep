@@ -1,11 +1,15 @@
 var args = arguments[0] || {};
 
-var titleLabel = Titanium.UI.createLabel({
-    color:'#FFF',
-    text:'Entrar',
-    textAlign:'center',
-    font: { fontSize: "18dp", fontWeight: 'bold'}
-});
+if(Titanium.Platform.name != 'android'){
+	var titleLabel = Titanium.UI.createLabel({
+	    color:'#FFF',
+	    text:'Entrar',
+	    textAlign:'center',
+	    font: { fontSize: "18dp", fontWeight: 'bold'}
+	});
+	
+	$.winLogin.setTitleControl(titleLabel);
+}
 
 function cancelarClick(){
  	Alloy.Globals.closeWindow();
@@ -19,4 +23,3 @@ function facebookClick(){
 	Alloy.Globals.openWindow({name: "auth/facebook"});
 }
 
-$.winLogin.setTitleControl(titleLabel);

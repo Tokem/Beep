@@ -18,8 +18,8 @@
 				</View>	
 						
 				<View top="30dp" height="30dp">
-					<Button class="btn-cancel bold" >Cancelar</Button>
-					<Button class="btn-confirm bold">Entrar</Button>
+					<Button class="btn-cancel bold input-button" >Cancelar</Button>
+					<Button class="btn-confirm bold input-button">Entrar</Button>
 				</View>
 			</View>
 	    </Window>

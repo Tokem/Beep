@@ -3,6 +3,7 @@
 ".hor": { layout :"horizontal" },
 ".container": {backgroundColor: "#FFF"},
 ".navigation":{ tintColor: "#696969"},
+".navigation-white":{ tintColor: "#FFF"},
 ".nav-login":{ tintColor: "#be0e4f"},
 
 // Others
@@ -26,8 +27,12 @@
 ".bold": { font: {fontWeight :"bold"} },
 
 //Colors 
-".titulo": { color: "#000" },
+".titulo": { color: "#696969", font:{fontSize: "14dp", fontFamily: 'MuseoSans-700'} },
+".titulo-white": { color: "#FFF", font:{fontSize: "16dp", fontFamily: 'MuseoSans-700'} },
+".white": { color: "#FFF"},
 ".subtitulo": { color: "#767676" },
+".gray": { color: "#767676" },
+
 
 //Buttons
 ".register": {left: "20dp", bottom: "50dp", backgroundImage: "/system/buttons/register.png", width: "170dp"},
@@ -41,9 +46,12 @@
 ".forgot": {width:"100%", top:"30dp", color: "#3a5a97"},
 
 //Labels
-"Label":{ color: 'white',font: {fontFamily: 'MuseoSans_700'} },
+"Label":{ color: 'white',font: {fontFamily: 'MuseoSans-700'} },
 ".wizard": { left: "25dp", width: '200dp', bottom: '90dp', height:"120dp" },
 ".wizard-label":{ left:'0dp', backgroundPaddingRight: '5dp', backgroundPaddingLeft: "5dp", backgroundImage: "/system/background/opacity.png" },
 
 //Inputs
-".input-text": {height:"30dp", top: "5dp", left: "15dp", right: "15dp", font: {fontFamily:"MuseoSans-300" } }
+".input-text": {height:"30dp", top: "5dp", left: "15dp", right: "15dp", font: {fontFamily:"MuseoSans-300" } },
+".input-button": {font: {fontFamily:"MuseoSans-500" } },
+".input-title": {font: {fontFamily:"MuseoSans-700" } },
+

@@ -1,6 +1,14 @@
 <Alloy>
-	<NavigationWindow id="navRegister" class="container vert">
-	    <Window id="winRegister"  barColor="#9a003a" backgroundColor="#be0d4f" class="vert" tintColor="#FFFFFF">
+ 	<Window id="winRegister"  class="container navigation-white vert">
+ 		<View height="60dp" top="0dp" width="100%" backgroundColor="#9a003a" layout="Vertical"  zIndex="2"> 
+    		<View height="20dp"  width="100%"></View>
+    		<View height="40dp">
+    			<Button left="5dp" zIndex="4" height="20dp" width="40dp" image="/system/icones/back.png" onClick="back"></Button>
+    			<Label class="titulo-white bold">Criar Conta</Label>
+    		</View>
+	    </View>
+	    
+		<ScrollView id="navRegister" class="container vert" backgroundColor="#be0d4f" >
 			<View left="30dp" right="30dp" top="40dp" class="vert">
 				
 				<View height="165dp" backgroundImage="/system/background/bg-login.png" layout="vertical">
@@ -22,12 +30,13 @@
 				
 				<Button class="login-fb font-12" onClick="facebookClick"></Button>
 				
-				<Button class="font-11 forgot" color="white" > Termos de Política e Privacidade</Button>
+				<Button class="font-11 forgot" color="white" backgroundColor="transparent" > Termos de Política e Privacidade</Button>
 				
 				<View width="84%" class="hor" height="20dp" top="30dp">
-					<View width="10dp" height="10dp" right="10dp" backgroundColor="#FFF"></View><Label class="font-10"> Li e concordo com os termos e condições</Label>
+					<View width="10dp" height="10dp" right="10dp" backgroundColor="#FFF"></View>
+					<Label class="font-10"> Li e concordo com os termos e condições</Label>
 				</View>
 			</View>
-	    </Window>
-    </NavigationWindow>
+   	 </ScrollView>
+    </Window>
 </Alloy>

@@ -1,0 +1,154 @@
+<Alloy>
+	<View>
+		<View width="100%" id="mask" top="0dp" height="100%" backgroundImage="/system/background/opacity.png" zIndex="1" visible="false"  layout="Vertical">
+			<View height="20dp"  width="100%"></View>
+			<View height="40dp">
+				<Button left="5dp" zIndex="4" height="20dp" width="40dp" onClick="openMenu"><ImageView image="/system/icones/menu.png"></ImageView></Button>
+				<Label class="titulo bold">Visão Geral</Label>
+			</View>	    	
+		</View>       	
+		<View height="60dp" top="0dp" width="100%" backgroundColor="#f2f2f2" layout="Vertical"  zIndex="2"> 
+			<View height="20dp"  width="100%"></View>
+			<View height="40dp">
+				<Button left="5dp" zIndex="4" height="20dp" width="40dp" onClick="openMenu"><ImageView image="/system/icones/menu.png"></ImageView></Button>
+				<Label class="titulo bold">Visão Geral</Label>
+			</View>
+		</View> 
+		
+		<View height="1dp" top="60dp" backgroundColor="#dadada" width="100%"></View> 
+		
+		<View>	  
+	    	<View backgroundColor="#f2f2f2" height="36dp" top="61dp" class="hor">
+				<Button width="33%" height="36dp"icon="geral">
+					<View  backgroundImage="/system/icones/geral.png" enabled="true" width="20dp" height="20dp" tintColor="#FFF"></View>
+				</Button>
+				<Button width="33%" height="36dp"icon="geral">
+					<View  backgroundImage="/system/icones/calendar_inactive.png" enabled="true" width="20dp" height="20dp" tintColor="#FFF"></View>
+				</Button>
+				<Button width="33%" height="36dp"icon="geral">
+					<View  backgroundImage="/system/icones/time_inactive.png" enabled="true" width="20dp" height="20dp" tintColor="#FFF"></View>
+				</Button>
+	    	</View>
+	    	
+	    	<ScrollView class="vert" top="97dp" contentHeight="auto" scrollingEnabled="true" showVerticalScrollIndicator="false" >
+	    		<View class="hor" top="10" height="105dp">
+	   				<Button width="33%" height="110dp" class="vert"  onClick="onclick" onDblclick="eventoDblClick">
+	    				<ImageView image="/system/background/list.png" left="7dp" right="7dp" bottom="3dp"></ImageView>
+	    				<View bottom="0" left="10dp" right="10dp">
+	    					<ImageView image="/system/icones/unchecked.png" width="10dp" left="0dp" height="10dp"></ImageView>
+	    					<Label  class="font-9 bold" color="#F2F2F2">100 checks</Label>        					
+	    					<ImageView image="/system/icones/star.png" right="0dp" width="10dp" height="10dp"></ImageView>
+	    				</View>
+	    			</Button>
+	    			<Button width="33%" height="105dp" class="vert" onClick="onclick">
+	    				<ImageView image="/system/background/list.png" left="7dp" right="7dp" bottom="3dp"></ImageView>
+	    				<View bottom="0" left="10dp" right="10dp">
+	    					<ImageView image="/system/icones/unchecked.png" width="10dp" left="0dp" height="10dp"></ImageView>
+	    					<Label  class="font-9 bold" color="#F2F2F2">100 checks</Label>        					
+	    					<ImageView image="/system/icones/star.png" right="0dp" width="10dp" height="10dp"></ImageView>
+	    				</View>
+	    			</Button>
+	   				<Button width="33%" height="105dp" class="vert" onClick="onclick">
+	    				<ImageView image="/system/background/list.png" left="7dp" right="7dp" bottom="3dp"></ImageView>
+	    				<View bottom="0" left="10dp" right="10dp">
+	    					<ImageView image="/system/icones/unchecked.png" width="10dp" left="0dp" height="10dp"></ImageView>
+	    					<Label  class="font-9 bold" color="#F2F2F2">100 checks</Label>        					
+	    					<ImageView image="/system/icones/star.png" right="0dp" width="10dp" height="10dp"></ImageView>
+	    				</View>
+	    			</Button>
+	    		</View>
+	    		
+	    		<View backgroundColor="#f2f2f2" top="15dp" left="5dp" right="5dp" height="2dp">
+					<View width="60dp" height="10dp"  backgroundColor="#FFF" top="-5dp">
+						<ImageView image="/system/icones/star.png" width="10dp" height="10dp" ></ImageView>
+					</View>   
+	    		</View>
+	    		
+	    		<View class="hor" top="15" height="105dp">
+	   				<Button width="33%" height="110dp" class="vert" onClick="onclick">
+	    				<ImageView image="/system/background/list.png" left="7dp" right="7dp" bottom="3dp"></ImageView>
+	    				<View bottom="0" left="10dp" right="10dp">
+	    					<ImageView image="/system/icones/unchecked.png" width="10dp" left="0dp" height="10dp"></ImageView>
+	    					<Label  class="font-9 bold" color="#F2F2F2">100 checks</Label>        					
+	    				</View>
+	    			</Button>
+	    			<Button width="33%" height="105dp" class="vert" onClick="onclick">
+	    				<ImageView image="/system/background/list.png" left="7dp" right="7dp" bottom="3dp"></ImageView>
+	    				<View bottom="0" left="10dp" right="10dp">
+	    					<ImageView image="/system/icones/unchecked.png" width="10dp" left="0dp" height="10dp"></ImageView>
+	    					<Label  class="font-9 bold" color="#F2F2F2">100 checks</Label>        					
+	    				</View>
+	    			</Button>
+	   				<Button width="33%" height="105dp" class="vert" onClick="onclick">
+	    				<ImageView image="/system/background/list.png" left="7dp" right="7dp" bottom="3dp"></ImageView>
+	    				<View bottom="0" left="10dp" right="10dp">
+	    					<ImageView image="/system/icones/unchecked.png" width="10dp" left="0dp" height="10dp"></ImageView>
+	    					<Label  class="font-9 bold" color="#F2F2F2">100 checks</Label>        					
+	    				</View>
+	    			</Button>
+	    		</View>
+	
+	    		<View class="hor" top="10" height="105dp">
+	   				<Button width="33%" height="110dp" class="vert" onClick="onclick">
+	    				<ImageView image="/system/background/list.png" left="7dp" right="7dp" bottom="3dp"></ImageView>
+	    				<View bottom="0" left="10dp" right="10dp">
+	    					<ImageView image="/system/icones/checked.png" width="10dp" left="0dp" height="10dp"></ImageView>
+	    					<Label  class="font-9 bold" color="#F2F2F2">100 checks</Label>        					
+	    				</View>
+	    			</Button>
+	    			<Button width="33%" height="105dp" class="vert" onClick="onclick">
+	    				<ImageView image="/system/background/list.png" left="7dp" right="7dp" bottom="3dp"></ImageView>
+	    				<View bottom="0" left="10dp" right="10dp">
+	    					<ImageView image="/system/icones/unchecked.png" width="10dp" left="0dp" height="10dp"></ImageView>
+	    					<Label  class="font-9 bold" color="#F2F2F2">100 checks</Label>        					
+	    				</View>
+	    			</Button>
+	   				<Button width="33%" height="105dp" class="vert" onClick="onclick">
+	    				<ImageView image="/system/background/list.png" left="7dp" right="7dp" bottom="3dp"></ImageView>
+	    				<View bottom="0" left="10dp" right="10dp">
+	    					<ImageView image="/system/icones/unchecked.png" width="10dp" left="0dp" height="10dp"></ImageView>
+	    					<Label  class="font-9 bold" color="#F2F2F2">100 checks</Label>        					
+	     				</View>
+	    			</Button>
+	    		</View>  
+	    		
+	    		<View class="hor" top="10" height="105dp">
+	   				<Button width="33%" height="105dp" class="vert" onClick="onclick">
+	    				<ImageView image="/system/background/list.png" left="7dp" right="7dp" bottom="3dp"></ImageView>
+	    				<View bottom="0" left="10dp" right="10dp">
+	    					<ImageView image="/system/icones/checked.png" width="10dp" left="0dp" height="10dp"></ImageView>
+	    					<Label  class="font-9 bold" color="#F2F2F2">100 checks</Label>        					
+	    				</View>
+	    			</Button>
+	    			<Button width="33%" height="105dp" class="vert" onClick="onclick">
+	    				<ImageView image="/system/background/list.png" left="7dp" right="7dp" bottom="3dp"></ImageView>
+	    				<View bottom="0" left="10dp" right="10dp">
+	    					<ImageView image="/system/icones/checked.png" width="10dp" left="0dp" height="10dp"></ImageView>
+	    					<Label  class="font-9 bold" color="#F2F2F2">100 checks</Label>        					
+	    				</View>
+	    			</Button>
+	   				<Button width="33%" height="105dp" class="vert" onClick="onclick">
+	    				<ImageView image="/system/background/list.png" left="7dp" right="7dp" bottom="3dp"></ImageView>
+	    				<View bottom="0" left="10dp" right="10dp">
+	    					<ImageView image="/system/icones/checked.png" width="10dp" left="0dp" height="10dp"></ImageView>
+	    					<Label  class="font-9 bold" color="#F2F2F2">100 checks</Label>        					
+	    				</View>
+	    			</Button>
+	    		</View>
+	
+	    		
+	    		<View height="50dp" width="100%"></View>
+	
+	    	</ScrollView>
+		</View>
+		
+		<View backgroundColor="#696969" height="25dp" bottom="0dp" class="vert">
+			<View  top="-25dp" backgroundColor="#696969" width="50dp" height="50dp" borderRadius="25dp" >
+		
+					<Button height="40dp" width="40dp" borderRadius="20dp" backgroundColor="#000"><ImageView image="/system/icones/qrcode.png" width="20dp" height="20dp" tintColor="#000"></ImageView></Button>
+
+			</View>
+		</View>
+		
+	</View>
+</Alloy>

@@ -13,8 +13,8 @@
 				<Button class="btn-confirm bold" onClick="entrarClick">Entrar</Button>
 			</View>
 			
-			<Button class="font-11 forgot" color="white" > Esqueci minha senha</Button>
-			<Button class="login-fb font-12" onClick="facebookClick"></Button>
+			<Button class="font-11 forgot input-button" color="white" > Esqueci minha senha</Button>
+			<Button class="login-fb font-12 input-button" onClick="facebookClick"></Button>
 		</View>
     </Window>
 </Alloy>

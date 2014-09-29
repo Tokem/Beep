@@ -1,5 +1,15 @@
 <Alloy>
-	<Window id="detalhe" backButtonTitle="" class="container navigation vert">
+	<View id="detalhe" backButtonTitle="" class="container navigation vert">
+		<View height="60dp" top="0dp" width="100%" backgroundColor="#f2f2f2" layout="Vertical"  zIndex="2"> 
+    		<View height="20dp"  width="100%"></View>
+    		<View height="40dp">
+    			<Button left="5dp" zIndex="4" height="20dp" width="40dp" image="/system/icones/back-gray.png" onClick="back"></Button>
+    			<Label class="titulo bold">Detalhe Titulo</Label>
+    		</View>
+	    </View>
+	    
+	    <View height="1dp" backgroundColor="#dadada" width="100%"></View> 
+	    
 		<View backgroundColor="#F2F2F2" height="365dp" top="0dp" layout="vertical">
 			<ImageView left="15dp" right="15dp" top="10dp" image="/system/background/list_detail.png"></ImageView>
 			<View width="150dp" top="10dp" layout="vertical" height="15dp">
@@ -15,5 +25,5 @@
 			
 		</View>
 		<View class="border" ></View>
-	</Window>
+	</View>
 </Alloy>

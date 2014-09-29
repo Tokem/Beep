@@ -3,33 +3,33 @@
 		<ScrollableView id="scrollview" showPagingControl="true" pagingControlAlpha="0.8" backgroundColor="#FFF" backgroundImage="/images/outros/background.png">
             <View backgroundImage="/system/background/wizard_01.png">
             	<View class="wizard vert" bottom="50dp">
-		        	<Label class="wizard-label bold font-16" backgroundPaddingTop="3dp">BEM-VINDO!</Label>
-		        	<Label class="wizard-label font-12">Bem-vindo ao Beep, seu</Label>
-		        	<Label class="wizard-label font-12">termômetro de festas.</Label>
+		        	<Label class="wizard-label bold font-16 input-title" backgroundPaddingTop="3dp">Bem-vindo!</Label>
+		        	<Label class="wizard-label font-12 input-title">Bem-vindo ao Beep, seu</Label>
+		        	<Label class="wizard-label font-12 input-title">termômetro de festas.</Label>
 		        </View>
       		</View>
             <View backgroundImage="/system/background/wizard_02.png">
             	<View class="wizard vert" bottom="50dp">
-		        	<Label class="wizard-label bold font-16" backgroundPaddingTop="3dp">Descubra e Compare!</Label>
-		        	<Label class="wizard-label font-12">Saiba quais as melhores</Label>
-		        	<Label class="wizard-label font-12">festas ao seu redor</Label>
-		        	<Label class="wizard-label font-12">Sinta como elas estão faladas</Label>
-		        	<Label class="wizard-label font-12">e compare-as.</Label>
+		        	<Label class="wizard-label bold font-16 input-title" backgroundPaddingTop="3dp">Descubra e Compare!</Label>
+		        	<Label class="wizard-label font-12 input-title">Saiba quais as melhores</Label>
+		        	<Label class="wizard-label font-12 input-title">festas ao seu redor</Label>
+		        	<Label class="wizard-label font-12 input-title">Sinta como elas estão faladas</Label>
+		        	<Label class="wizard-label font-12 input-title">e compare-as.</Label>
 		        </View>           
 		    </View>
             <View backgroundImage="/system/background/wizard_03.png">
             	<View class="wizard vert" bottom="50dp">
-		        	<Label class="wizard-label bold font-16" backgroundPaddingTop="3dp">Clube  de Vantagens.</Label>
-		        	<Label class="wizard-label font-12">Faça parte de um vasto</Label>
-		        	<Label class="wizard-label font-12">clube de vantagens com</Label>
-		        	<Label class="wizard-label font-12">acúmulo de pontos</Label>
-		        	<Label class="wizard-label font-12">e descontos.</Label>
+		        	<Label class="wizard-label bold font-16 input-title" backgroundPaddingTop="3dp">Clube  de Vantagens.</Label>
+		        	<Label class="wizard-label font-12 input-title">Faça parte de um vasto</Label>
+		        	<Label class="wizard-label font-12 input-title">clube de vantagens com</Label>
+		        	<Label class="wizard-label font-12 input-title">acúmulo de pontos</Label>
+		        	<Label class="wizard-label font-12 input-title">e descontos.</Label>
 		        </View>
             </View>
         </ScrollableView>     
         
-        <Button class="font-12 bold register" onClick="registerClick">Cadastre-se no Beep!</Button>
-        <Button class="font-12 bold login" onClick="loginClick" >Login</Button>
+        <Button class="font-12 bold register input-button" onClick="registerClick">Cadastre-se no beep!</Button>
+        <Button class="font-12 bold login input-button" onClick="loginClick" >Log In</Button>
        	
        	<View id="form" backgroundImage="/system/background/opacity.png" width="100%" height="100%" top="0" left="0" visible="false">
 			<View id="login">
