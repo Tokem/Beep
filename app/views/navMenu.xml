@@ -6,16 +6,16 @@
 				<ImageView width="60dp" height="60dp" image="/system/background/mascara.png"></ImageView>
 			</View>
 			<View width="170dp" height="40dp" layout="vertical" >
-				<Label class="font-14 titulo left" width="80%"> André morette</Label>		
-				<Label class="font-10 subtitulo left"  width="80%"> Usuário ouro </Label>	
-				<Label class="font-10 subtitulo left"  width="80%"> 3700 beeps </Label>	
+				<Label class="titulo left" width="80%"> André morette</Label>		
+				<Label class="subtitulo left"  width="80%"> Usuário ouro </Label>	
+				<Label class="subtitulo left"  width="80%"> 3700 beeps </Label>	
 			</View>
 		</View>
-	 	<ListView id="menuList" canScroll="true" left="-15dp" defaultItemTemplate="template" separatorStyle="Titanium.UI.iPhone.ListViewSeparatorStyle.NONE">
+	 	<ListView id="menuList" left="-15dp" defaultItemTemplate="template" separatorStyle="Titanium.UI.iPhone.ListViewSeparatorStyle.NONE">
 	 		<Templates>
                 <ItemTemplate name="template" class="hor" layout="vertical">
                 	<ImageView bindId="icon"></ImageView>
-                    <Label bindId="label" class="font-14 titulo left gray" width="50%"></Label>
+                    <Label bindId="label" class="font-14 titulo left gray 500" width="50%"></Label>
                     <View bottom="0" height="1" backgroundColor="#e9e9e9" width="100%"></View>
                 </ItemTemplate>
             </Templates>

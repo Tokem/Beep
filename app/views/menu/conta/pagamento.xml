@@ -1,0 +1,36 @@
+<Alloy>
+	<Window class="container navigation-white vert">		
+		<View height="60dp" top="0dp" width="100%" backgroundColor="#9a003a" layout="Vertical"> 
+    		<View height="20dp"  width="100%"></View>
+    		<View height="40dp">
+    			<Button left="5dp" zIndex="4" height="20dp" width="40dp" image="/system/icones/back.png" onClick="back"></Button>
+    			<Label class="title-head white">Informações da Conta</Label>
+    		</View>
+	    </View>
+	    <View class="vert">
+	    	<View class="vert" backgroundColor="#f2f2f2" left="10dp" height="80dp" right="10dp" top="10dp" borderRadius="5dp">
+		    	<View  height="40dp" width="100%">
+		    		<Label left="10dp" class="font-10 gray">Destaques</Label>
+		    		<Label right="10dp" class="font-10 gray">* 2</Label>
+		    	</View>	    		
+		    	<View left="10dp" class="border" right="10dp" height="1dp"></View>
+		    	<View height="40dp"  width="100%">
+		    		<Label left="10dp" class="font-10 gray">Validade do Serviço</Label>
+		    		<Label right="10dp" class="font-10 link">20/12/2014</Label>
+		    	</View>		    			    	
+	    	</View>
+	    	
+	    	<View class="vert" backgroundColor="#f2f2f2" left="10dp" height="160dp" right="10dp" top="10dp" borderRadius="5dp">
+	    		<Label class="font-12 link" top="5dp" left="10dp">COMPRAR BEEPS!</Label>			    	
+	    	</View>
+	    	
+	    	<View class="vert" backgroundColor="#f2f2f2" left="10dp" height="25dp" right="10dp" top="10dp" borderRadius="5dp">
+	    		<Label class="font-10 gray bold center 700" height="25dp" width="100%">GOOGLE WALLET</Label>	    			    	
+			</View>
+			
+	    	<View class="vert" backgroundColor="#f2f2f2" left="10dp" height="25dp" right="10dp" top="10dp" borderRadius="5dp">
+	    		<Label class="font-10 link center" height="25dp" width="100%">Por que nós não anunciamos</Label>	    			    	
+			</View>
+	    </View>
+	</Window>
+</Alloy>

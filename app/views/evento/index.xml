@@ -1,0 +1,40 @@
+<Alloy>
+	<View class="container navigation-white vert">		
+		<View height="60dp" top="0dp" width="100%" backgroundColor="#9a003a" layout="Vertical"> 
+    		<View height="20dp"  width="100%"></View>
+    		<View height="40dp">
+    			<Button left="5dp" zIndex="4" height="20dp" width="40dp" image="/system/icones/back.png" onClick="back"></Button>
+    			<Label class="title-head white">Atração/Ingresso</Label>
+    		</View>
+	    </View>
+	    <ScrollView class="vert">
+	    	<!-- Atração -->
+	    	<Button left="10dp" width="25dp" height="25dp" backgroundColor="0aa3b1" color="#FFF" bottom="5dp" top="10dp">+</Button>
+	    	<View id="_cAtracao" left="10dp" right="10dp" class="vert" height="60dp">
+	    		<View height="30dp">
+	    			<View backgroundColor="#be0d4f" width="25dp" height="30dp" left="0"></View>
+	    			<TextField left="25dp" paddingLeft="15dp"  top="0dp" right="27dp" hintText="Atração" backgroundColor="#e5e5e5" height="30dp" class="input-text bold font-12"></TextField>
+	    		</View>
+	    		<View height="30dp" top="10dp">
+	    			<TextField left="25dp" paddingLeft="15dp" top="0dp" right="27dp" hintText="Estilo" backgroundColor="#e5e5e5" height="30dp" class="input-text bold font-12"></TextField>
+	    			<View backgroundColor="#be0d4f" width="25dp" height="30dp" right="0"></View>
+	    		</View>
+	    	</View>
+		    
+		    <!-- Ingresso -->
+		    <Button left="10dp" width="25dp" height="25dp" backgroundColor="0aa3b1" color="#FFF" bottom="5dp" top="10dp">+</Button>
+	    	<View id="_cAtracao" left="10dp" right="10dp" class="vert" height="60dp">
+	    		<View height="30dp">
+	    			<View backgroundColor="#be0d4f" width="25dp" height="30dp" left="0"></View>
+	    			<TextField left="25dp" paddingLeft="15dp"  top="0dp" right="27dp" hintText="Atração" backgroundColor="#e5e5e5" height="30dp" class="input-text bold font-12"></TextField>
+	    		</View>
+	    		<View height="30dp" top="10dp">
+	    			<TextField left="25dp" paddingLeft="15dp" top="0dp" right="27dp" hintText="Estilo" backgroundColor="#e5e5e5" height="30dp" class="input-text bold font-12"></TextField>
+	    			<View backgroundColor="#be0d4f" width="25dp" height="30dp" right="0"></View>
+	    		</View>
+	    	</View>
+	    	
+	    	<Button left="10dp" left="20dp" right="20dp" backgroundColor="0aa3b1" color="#FFF">CONCLUIR</Button>	
+	    </ScrollView>
+	</View>
+</Alloy>

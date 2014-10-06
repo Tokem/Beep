@@ -1,7 +1,7 @@
 var args = arguments[0] || {};
 
 function onclick(){
-	Alloy.Globals.openContent({name: "main/detail"});
+	Alloy.Globals.openWindow({name: "main/detail"});
 };
 
 //Click do menu 

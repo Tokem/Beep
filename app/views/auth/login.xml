@@ -1,20 +1,23 @@
 <Alloy>
     <Window id="winLogin" barColor="#be0e4f" backgroundColor="#be0d4f" class="vert">
     	<ImageView height="150dp" width="100dp" top="50dp" image="/system/logo.png"></ImageView>
+    	
 		<View left="30dp" right="30dp" top="20dp" bottom="20dp" class="vert">
-			<View height="90dp" backgroundImage="/system/background/bg-login.png">
-				<TextField   hintText="Email" height="30dp" top="5dp" left="15dp" right="15dp" class="font-10"></TextField>
-				<View  left="15dp" right="15dp"height="1dp" backgroundColor="#dddbdb"></View>
-				<TextField hintText="Password"  left="15dp" right="15dp" height="30dp" bottom="5dp"  class="font-10" ></TextField>
+			<View height="90dp" backgroundImage="/system/background/bg-login.png" class="vert">
+				
+				<TextField id="login" class="input-text bold font-12" hintText="Email" top="10dp"></TextField>
+				<View left="15dp" right="15dp" height="1dp" top="5dp" bottom="5dp" backgroundColor="#dddbdb"></View>
+				<TextField passwordMask="true" id="password" class="input-text bold font-12" hintText="Password"></TextField>
 			</View>	
 					
 			<View top="30dp" height="30dp">
-				<Button class="btn-cancel bold" onClick="cancelarClick" >Cancelar</Button>
-				<Button class="btn-confirm bold" onClick="entrarClick">Entrar</Button>
+				<Button class="btn-cancel font-12 bold input-button" onClick="cancelarClick" >Cancelar</Button>
+				<Button class="btn-confirm font-12 bold input-button" onClick="entrarClick">Entrar</Button>
 			</View>
 			
-			<Button class="font-11 forgot input-button" color="white" > Esqueci minha senha</Button>
-			<Button class="login-fb font-12 input-button" onClick="facebookClick"></Button>
+			<Button class="font-11 white bold forgot input-button" > Esqueci minha senha</Button>
+			<Button class="login-fb font-12" onClick="facebookClick"></Button>
+			<LoginButton id="fbButton" ns="Alloy.Globals.Facebook"></LoginButton>
 		</View>
     </Window>
 </Alloy>

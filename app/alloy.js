@@ -1,27 +1,35 @@
+var _screen = []; var _contentScreen = [];
 Alloy.Globals.toogle = false;
 Alloy.Globals.main;
 Alloy.Globals.Util = require('util');
+var validate = require('hdjs.validate');
 
-// animations
+Alloy.Globals.Validation =  new validate.FormValidator();;
+
+Alloy.Globals.Facebook = require('facebook');
+
+// Animacao para esquerda
 Alloy.Globals.animateLeft = Ti.UI.createAnimation({
     left: "250dp",
     curve: Ti.UI.ANIMATION_CURVE_EASE_OUT,
     duration: 500
 });
 
+//Animacao para direita 
 Alloy.Globals.animateRight    = Ti.UI.createAnimation({
     left: 0,
     curve: Ti.UI.ANIMATION_CURVE_EASE_OUT,
     duration: 500
 });
 
-var _screen = []; var _contentScreen = [];
 
+//Inicializa o conteudo
 var _content = null;
 Alloy.Globals.setContent = function(content){
 	_content = content;
 };
 
+//Abre uma nova janela
 Alloy.Globals.openWindow = function(screen){
 	if(screen.subview){
 		var current = _screen[_screen.length -1];
@@ -35,6 +43,7 @@ Alloy.Globals.openWindow = function(screen){
 	}
 };
 
+//Abre o conteudo interno do menu
 Alloy.Globals.openContent = function(screen){
 	var win = Alloy.createController(screen.name).getView();
 	if(_contentScreen.length > 0){
@@ -48,15 +57,9 @@ Alloy.Globals.openContent = function(screen){
 	}
 };
 
-Alloy.Globals.closeContent = function(){
-	/*Ti.API.log(_contentScreen);
-	
-	_contentScreen.pop();
-	var win = _contentScreen[_contentScreen.length - 1];
 
-	_content.removeAllChildren();
-	_content.add(win);	*/
-	
+// Abre o conteudo interno dos menus
+Alloy.Globals.closeContent = function(){	
 	if(_contentScreen.length > 2){
 		var current = _contentScreen.pop();
 		if(current.subview){
@@ -67,29 +70,28 @@ Alloy.Globals.closeContent = function(){
 	}else{
 		Alloy.Globals.openMenu();
 	}
-
 };
 
+// Fecha a janela aberta
 Alloy.Globals.closeWindow = function(){
 	var win = _screen.pop();
 	win.close();
 };
 
+//Referente a sair do menu, Fecha todas as janelas e limpa o content
+Alloy.Globals.sairWindow = function(){
+	_contentScreen = [];
+	var win = _screen.pop();
+	win.close();
+};
+
+//Slide do menu
 Alloy.Globals.openMenu = function(){
 	if(!Alloy.Globals.toogle){
-		//$.content.left = "250dp";
 		_content.animate(Alloy.Globals.animateLeft);
 		Alloy.Globals.toogle = true;
-//		_mask.visible = true;
-//		_mask.zIndex = 3;
-		//$.mainNav.tintColor = "#FFF";
 	}else{
 		_content.animate(Alloy.Globals.animateRight);
 		Alloy.Globals.toogle = false;
-//		_mask.visible = false;
-//		_mask.zIndex = 1;
-		//$.content.left = "0dp";
-		//$.mainNav.tintColor = "#696969";
-	}	
-	
+	}		
 };

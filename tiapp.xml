@@ -38,13 +38,13 @@
             </dict>
         </plist>
     </ios>
-<android xmlns:android="http://schemas.android.com/apk/res/android">
-    <manifest>
-        <!--application android:theme="@style/Theme.NoActionBar"/>
+    <android xmlns:android="http://schemas.android.com/apk/res/android">
+        <manifest>
+            <!--application android:theme="@style/Theme.NoActionBar"/>
         <Need to specify at least API level 11 for Titanium SDK 3.2.x and prior -->
-        <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="19"/>
-    </manifest>
-</android>
+            <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="19"/>
+        </manifest>
+    </android>
     <mobileweb>
         <precache/>
         <splash>
@@ -65,8 +65,8 @@
         <target device="iphone">true</target>
         <target device="mobileweb">false</target>
     </deployment-targets>
-    <sdk-version>3.3.0.GA</sdk-version>
+    <sdk-version>3.4.0.GA</sdk-version>
     <plugins>
-        <plugin version="1.4">ti.alloy</plugin>
+        <plugin version="1.5">ti.alloy</plugin>
     </plugins>
 </ti:app>

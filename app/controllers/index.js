@@ -3,10 +3,7 @@ function loginClick(){
 }
          
 function registerClick(){
-	//Alloy.Globals.openWindow({name: "auth/register"});
-	Alloy.Globals.Util.login('daniel.dms.23@gmail.com', 'dmsqwe123', function(data){
-		Ti.API.log(data);
-	});
+	Alloy.Globals.openWindow({name: "auth/register"});
 }
 
 $.index.open();

@@ -1,10 +1,10 @@
 <Alloy>
  	<Window id="winRegister"  class="container navigation-white vert">
- 		<View height="60dp" top="0dp" width="100%" backgroundColor="#9a003a" layout="Vertical"  zIndex="2"> 
+ 		<View height="60dp" top="0dp" width="100%" backgroundColor="#9a003a" layout="Vertical"> 
     		<View height="20dp"  width="100%"></View>
     		<View height="40dp">
     			<Button left="5dp" zIndex="4" height="20dp" width="40dp" image="/system/icones/back.png" onClick="back"></Button>
-    			<Label class="titulo-white bold">Criar Conta</Label>
+    			<Label class="title-head white">Criar Conta</Label>
     		</View>
 	    </View>
 	    
@@ -12,30 +12,33 @@
 			<View left="30dp" right="30dp" top="40dp" class="vert">
 				
 				<View height="165dp" backgroundImage="/system/background/bg-login.png" layout="vertical">
-					<TextField hintText="Usuário" class="font-11 input-text"></TextField>
+					<TextField id="username" hintText="Usuário" class="font-11 input-text"></TextField>
 					<View left="15dp" right="15dp" height="1dp" bottom="5dp" top="0dp" backgroundColor="#dddbdb"></View>
 					
-					<TextField hintText="Email" class="font-11 input-text" ></TextField>
+					<TextField id="email" hintText="Email" class="font-11 input-text" ></TextField>
 					<View left="15dp" right="15dp" height="1dp" bottom="5dp" top="0dp" backgroundColor="#dddbdb"></View>
 					
-					<TextField hintText="Senha" class="font-11 input-text" ></TextField>
+					<TextField id="password" passwordMask="true" hintText="Senha" class="font-11 input-text" ></TextField>
 					<View left="15dp" right="15dp" height="1dp" bottom="5dp" top="0dp" backgroundColor="#dddbdb"></View>
 					
-					<TextField hintText="Confirmar senha" class="font-11 input-text" ></TextField>
+					<TextField  passwordMask="true" id="repassword" hintText="Confirmar senha" class="font-11 input-text" ></TextField>
 				</View>	
-						
+										
+				<View width="84%" class="hor" height="20dp" top="30dp">
+					<View width="15dp" height="15dp" right="10dp" backgroundColor="#FFF">
+						<ImageView image="/system/icones/checked.png"></ImageView>
+					</View>
+					<Label class="font-10 white"> Li e concordo com os termos e condições</Label>
+				</View>
+				
 				<View top="30dp" height="30dp">
-					<Button class="btn-confirm-large bold" width="100%">Continuar</Button>
+					<Button class="btn-confirm-large bold" width="100%" onClick="continuarClick">Continuar</Button>
 				</View>
 				
 				<Button class="login-fb font-12" onClick="facebookClick"></Button>
 				
 				<Button class="font-11 forgot" color="white" backgroundColor="transparent" > Termos de Política e Privacidade</Button>
-				
-				<View width="84%" class="hor" height="20dp" top="30dp">
-					<View width="10dp" height="10dp" right="10dp" backgroundColor="#FFF"></View>
-					<Label class="font-10"> Li e concordo com os termos e condições</Label>
-				</View>
+
 			</View>
    	 </ScrollView>
     </Window>

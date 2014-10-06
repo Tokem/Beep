@@ -4,7 +4,7 @@
     		<View height="20dp"  width="100%"></View>
     		<View height="40dp">
     			<Button left="5dp" zIndex="4" height="20dp" width="40dp" image="/system/icones/back.png" onClick="back"></Button>
-    			<Label class="titulo-white bold">Perfil</Label>
+    			<Label class="title-head white">Perfil</Label>
     		</View>
 	    </View>
 	    <ScrollView class="vert">
@@ -15,10 +15,14 @@
 	    		</View>
 	    	</View>
 	    	
-	    	<View left="10dp" right="10dp" backgroundColor="#be0d4f" height="50dp" top="30dp" borderRadius="10dp">
-	    		<TextField left="10dp" width="200dp" class="font-14 white" hintText="Daniel Marques"></TextField>
-	    		<View width="1dp" height="5dp" right="41dp" backgroundColor="#FFF"></View>
+	    	<View left="20dp" right="20dp" backgroundColor="#be0d4f" height="40dp" top="30dp" borderRadius="6dp">
+	    		<TextField left="10dp" width="210dp" class="font-14 white 500" hintText="Digite aqui seu nome"></TextField>
+	    		<View width="2dp" height="30dp" right="41dp" backgroundColor="#FFF"></View>
 	    		<Button image="/system/icones/edit.png" width="40dp" height="20dp" right="0dp"></Button> 
+	    	</View>
+	    	<View left="20dp" right="20dp" height="40dp" top="10dp" class="vert">
+	    		<Label class="font-10 gray left" width="100%">Esse não será seu nome de usuário ou pin.</Label>
+	    		<Label class="font-10 gray left" width="100%">Este será apenas o nome que ficará visível para o suporte do aplicativo.</Label>
 	    	</View>
 
 	    </ScrollView>

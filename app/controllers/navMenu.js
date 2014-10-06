@@ -67,7 +67,7 @@ $.menuList.addEventListener('itemclick', function(e){
 		     Alloy.Globals.openContent({name: "menu/favoritos/index"});
 		    break;
 		case 4:
-		     Alloy.Globals.openContent({name: "menu/lista/index"});
+		     Alloy.Globals.openContent({name: "evento/index"});
 		    break;
 		case 5:
 		     Alloy.Globals.openContent({name: "menu/clube/index"});
@@ -79,7 +79,7 @@ $.menuList.addEventListener('itemclick', function(e){
 		    Alloy.Globals.openContent({name: "menu/suporte/index"});
 		    break;
 		case 8:
-		     alert("Sair");
+		     Alloy.Globals.sairWindow();
 		    break;
 		    
 		default:

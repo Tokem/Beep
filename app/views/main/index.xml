@@ -4,14 +4,14 @@
 			<View height="20dp"  width="100%"></View>
 			<View height="40dp">
 				<Button left="5dp" zIndex="4" height="20dp" width="40dp" onClick="openMenu"><ImageView image="/system/icones/menu.png"></ImageView></Button>
-				<Label class="titulo bold">Visão Geral</Label>
+				<Label class="title-head gray">Visão Geral</Label>
 			</View>	    	
 		</View>       	
 		<View height="60dp" top="0dp" width="100%" backgroundColor="#f2f2f2" layout="Vertical"  zIndex="2"> 
 			<View height="20dp"  width="100%"></View>
 			<View height="40dp">
 				<Button left="5dp" zIndex="4" height="20dp" width="40dp" onClick="openMenu"><ImageView image="/system/icones/menu.png"></ImageView></Button>
-				<Label class="titulo bold">Visão Geral</Label>
+				<Label class="title-head gray">Visão Geral</Label>
 			</View>
 		</View> 
 		
