@@ -1,5 +1,5 @@
 var args = arguments[0] || {};
 
 function back(){
-	Alloy.Globals.closeContent();
+	Alloy.Globals.closeWindow();
 }

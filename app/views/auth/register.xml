@@ -24,11 +24,11 @@
 					<TextField  passwordMask="true" id="repassword" hintText="Confirmar senha" class="font-11 input-text" ></TextField>
 				</View>	
 										
-				<View width="84%" class="hor" height="20dp" top="30dp">
+				<View width="100%" class="hor" height="20dp" top="30dp">
 					<View width="15dp" height="15dp" right="10dp" backgroundColor="#FFF">
 						<ImageView image="/system/icones/checked.png"></ImageView>
 					</View>
-					<Label class="font-10 white"> Li e concordo com os termos e condições</Label>
+					<Label class="font-11 white bold"> Li e concordo com os termos e condições</Label>
 				</View>
 				
 				<View top="30dp" height="30dp">
@@ -37,7 +37,9 @@
 				
 				<Button class="login-fb font-12" onClick="facebookClick"></Button>
 				
-				<Button class="font-11 forgot" color="white" backgroundColor="transparent" > Termos de Política e Privacidade</Button>
+				<Button class="font-12 forgot bold center" color="white" backgroundColor="transparent" width="190dp"> Termos de Política e Privacidade
+				<View backgroundColor="#FFF" height="1dp" bottom="0dp"></View>
+				</Button>
 
 			</View>
    	 </ScrollView>

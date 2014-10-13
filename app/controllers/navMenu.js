@@ -14,6 +14,16 @@ items.push({
 });
 
 items.push({      
+	label : {text : "Loja Beep" },
+	icon: { image:"/system/icones/festas_passadas.png",	height: iconHeight,	left: '30dp' }
+});
+
+items.push({      
+	label : { text : "Clube de Vantagens" },
+	icon: { image:"/system/icones/clube_vantagens.png",	height: iconHeight,	left: '30dp' }
+});
+
+items.push({      
 	label : {text : "Festas Passadas" },
 	icon: { image:"/system/icones/festas_passadas.png",	height: iconHeight,	left: '30dp' }
 });
@@ -24,15 +34,10 @@ items.push({
 });
 
 items.push({      
-	label : { text : "Lista" },
+	label : { text : "Listas" },
 	icon: { image:"/system/icones/listas.png", height: iconHeight, left: '30dp' }
 });
-   
-items.push({      
-	label : { text : "Clube de Vantagens" },
-	icon: { image:"/system/icones/clube_vantagens.png",	height: iconHeight,	left: '30dp' }
-});
-
+  
 items.push({       
 	label : { text : "Configurações" },
 	icon: { image:"/system/icones/config.png",	height: iconHeight,	left: '30dp' }
@@ -61,24 +66,27 @@ $.menuList.addEventListener('itemclick', function(e){
 		     Alloy.Globals.openContent({name: "menu/conta/index"});
 		    break;
 		case 2:
-		     Alloy.Globals.openContent({name: "menu/passadas/index"});
+		     Alloy.Globals.openContent({name: "menu/loja/index"});
 		    break;
 		case 3:
-		     Alloy.Globals.openContent({name: "menu/favoritos/index"});
-		    break;
-		case 4:
-		     Alloy.Globals.openContent({name: "evento/index"});
-		    break;
-		case 5:
 		     Alloy.Globals.openContent({name: "menu/clube/index"});
 		    break;
+		case 4:
+		     Alloy.Globals.openContent({name: "menu/passadas/index"});
+		    break;
+		case 5:
+		     Alloy.Globals.openContent({name: "menu/favoritos/index"});
+		    break;
 		case 6:
-		     Alloy.Globals.openContent({name: "menu/config/index"});
+			 Alloy.Globals.openContent({name: "evento/index"});
 		    break;
 		case 7:
-		    Alloy.Globals.openContent({name: "menu/suporte/index"});
+		     Alloy.Globals.openContent({name: "menu/config/index"});
 		    break;
 		case 8:
+		    Alloy.Globals.openContent({name: "menu/suporte/index"});
+		    break;
+		case 9:
 		     Alloy.Globals.sairWindow();
 		    break;
 		    
