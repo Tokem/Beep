@@ -1,0 +1,49 @@
+<Alloy>
+ 	<Window class="container navigation-white vert" >
+ 		<View height="60dp" top="0dp" width="100%" backgroundColor="#9a003a" layout="Vertical"> 
+    		<View height="20dp"  width="100%"></View>
+    		<View height="40dp">
+    			<Button left="5dp" zIndex="4" height="20dp" width="40dp" image="/system/icones/back.png" onClick="back"></Button>
+    			<Label class="title-head white">Nível</Label>
+    		</View>
+	    </View>
+	    
+	    <View left="10dp" right="10dp" class="vert">
+		    <View class="vert"  height="150dp">
+		    	 <Label top="20dp" class="font-16 700 bold gray left" left="0dp"> Acumule Beeps</Label>
+		    	 <Label top="10dp" class="font-10 300 bold gray left">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam</Label>
+		    </View>
+		    
+		    <View height="150dp" class="hor" left="10dp" right="10dp">
+				<View width="10%" right="8%" backgroundColor="#b3aeae" height="16%" bottom="0dp"></View>	    	
+				<View width="10%" right="8%" backgroundColor="#c43523" height="32%" bottom="0dp"></View>	    	
+				<View width="10%" right="8%" backgroundColor="#100f09"  height="48%" bottom="0dp"></View>	    	
+				<View width="10%" right="8%" backgroundColor="#498253"  height="64%" bottom="0dp"></View>	    	
+				<View width="10%" right="8%" backgroundColor="#ffc500" height="80%" bottom="0dp"></View>	    	
+				<View width="10%" backgroundColor="#46658d" height="100%" bottom="0dp"></View>	    	
+		    </View>
+		    <View height="6dp" backgroundColor="#c8c8c8" top="10dp">
+		    	<View width="40%" height="4dp" backgroundColor="#100f09" left="0dp"> </View>
+		    </View>    
+	    	<View class="vert" backgroundColor="#f2f2f2"  height="120dp" top="20dp" borderRadius="5dp">
+		    	<View  height="40dp" width="100%">
+		    		<Label left="10dp" class="font-10 gray">Beeps</Label>
+		    		<Label right="10dp" class="font-10 link">500</Label>
+		    	</View>	 
+		    	   		
+		    	<View left="10dp" class="border" right="10dp" height="1dp"></View>
+		    	<View height="40dp"  width="100%">
+		    		<Label left="10dp" class="font-10 gray">Validade</Label>
+		    		<Label right="10dp" class="font-10 link">20/12/2014</Label>
+		    	</View>
+		    	
+		    	<View left="10dp" class="border" right="10dp" height="1dp"></View>
+		    	<View height="40dp"  width="100%">
+		    		<Label left="10dp" class="font-10 gray">Clube de Vantegens</Label>
+		    		
+		    	</View>				    			    	
+	    	</View>
+	    	
+	    </View>
+	</Window>
+</Alloy>

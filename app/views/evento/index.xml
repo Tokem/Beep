@@ -33,13 +33,13 @@
 		    		<View left="110dp" width="170dp" top="0dp" height="100%">
 		    			<ImageView left="0" top="0dp" zIndex="1" image="/system/background/itens-eventos.png" width="65dp" height="30dp">
 		    				<ImageView image="/system/icones/calendar2.png" left="5dp" width="17dp" height="17dp"></ImageView>
-		    				<Label class="font-12 white bold" left="25dp">Sex</Label>
+		    				<Label class="font-12 white bold" left="25dp"></Label>
 		    			</ImageView>
-		    			<Label left="50dp" onClick="showPicker" top="0dp" width="105dp" right="0dp" backgroundColor="#e5e5e5" height="30dp" class="input-text bold font-12 right">   /   /  </Label>
+		    			<Label left="50dp" onClick="showPicker" top="0dp" right="0dp" backgroundColor="#e5e5e5" height="30dp" class="input-text bold font-12 right"> </Label>
 
 						<ImageView width="17dp" height="17dp" image="/system/icones/time.png" zIndex="1" top="47dp" left="10dp"></ImageView>
 		    			<!--TextField left="0dp" paddingLeft="50dp" top="40dp" right="0dp" hintText="00:00:00" backgroundColor="#e5e5e5" height="30dp" class="input-text bold font-12"></TextField -->
-		    			<Label left="50dp" onClick="showPicker" top="47dp" right="0dp" backgroundColor="#e5e5e5" height="30dp" class="input-text bold font-12"> 00:00 </Label>
+		    			<Label left="50dp" onClick="showPicker" top="40dp" right="0dp" backgroundColor="#e5e5e5" height="30dp" class="input-text bold font-12"> </Label>
 
 		    			<View class="hor" width="100%" top="80dp" height="30dp">
 		    				<ImageView image="/system/icones/location.png" width="17dp" height="17dp"></ImageView>
@@ -59,42 +59,42 @@
 							<Label class="font-12 gray 300" left="16dp"> Casa de Show</Label>
 						</View>
 						
-						<View id="show" width="50%" height="30dp" left="0dp" top="30dp">
+						<View id="bar" width="50%" height="30dp" left="0dp" top="30dp">
 							<View width="14dp" height="14dp" backgroundColor="#CCC" left="0dp" borderRadius="7dp">
 								<View width="12dp" height="12dp" backgroundColor="#FFF" borderRadius="6dp"></View>
 							</View>
 							<Label class="font-12 gray 300" left="16dp"> Bar</Label>
 						</View>
 						
-						<View id="show" width="50%" height="30dp" left="0dp" top="60dp">	
+						<View id="boate" width="50%" height="30dp" left="0dp" top="60dp">	
 							<View width="14dp" height="14dp" backgroundColor="#CCC" left="0dp" borderRadius="7dp">
 								<View width="12dp" height="12dp" backgroundColor="#FFF" borderRadius="6dp"></View>
 							</View>
 							<Label class="font-12 gray 300" left="16dp"> Boate </Label>
 						</View>
 
-						<View id="show" width="50%" height="30dp" left="0dp" top="90dp">	
+						<View id="casa" width="50%" height="30dp" left="0dp" top="90dp">	
 							<View width="14dp" height="14dp" backgroundColor="#CCC" left="0dp" borderRadius="7dp">
 								<View width="12dp" height="12dp" backgroundColor="#FFF" borderRadius="6dp"></View>
 							</View>
 							<Label class="font-12 gray 300" left="16dp"> Festinha em casa</Label>
 						</View>
 						<!-- Right -->
-						<View id="show" width="50%" height="30dp" right="0dp" top="0dp">	
+						<View id="recepcao" width="50%" height="30dp" right="0dp" top="0dp">	
 							<View width="14dp" height="14dp" backgroundColor="#CCC" left="0dp" borderRadius="7dp">
 								<View width="12dp" height="12dp" backgroundColor="#FFF" borderRadius="6dp"></View>
 							</View>
 							<Label class="font-12 gray 300" left="16dp"> Casa de recepção</Label>
 						</View>
 						
-						<View id="show" width="50%" height="30dp" right="0dp" top="30dp">	
+						<View id="rua" width="50%" height="30dp" right="0dp" top="30dp">	
 							<View width="14dp" height="14dp" backgroundColor="#CCC" left="0dp" borderRadius="7dp">
 								<View width="12dp" height="12dp" backgroundColor="#FFF" borderRadius="6dp"></View>
 							</View>
 							<Label class="font-12 gray 300" left="16dp"> Rua</Label>
 						</View>
 						
-						<View id="show" width="50%" height="30dp" right="0dp" top="60dp">	
+						<View id="praia" width="50%" height="30dp" right="0dp" top="60dp">	
 							<View width="14dp" height="14dp" backgroundColor="#CCC" left="0dp" borderRadius="7dp">
 								<View width="12dp" height="12dp" backgroundColor="#FFF" borderRadius="6dp"></View>
 							</View>

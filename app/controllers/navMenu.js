@@ -78,7 +78,8 @@ $.menuList.addEventListener('itemclick', function(e){
 		     Alloy.Globals.openContent({name: "menu/favoritos/index"});
 		    break;
 		case 6:
-			 Alloy.Globals.openContent({name: "evento/index"});
+		//	 Alloy.Globals.openContent({name: "evento/index"});
+			 Alloy.Globals.openWindow({name: "outros/nivel"});
 		    break;
 		case 7:
 		     Alloy.Globals.openContent({name: "menu/config/index"});
