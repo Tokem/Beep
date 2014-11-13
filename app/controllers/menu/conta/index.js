@@ -20,6 +20,11 @@ items.push({
 });
 
 items.push({
+    label : { text : "Níveis"},
+});
+
+
+items.push({
     label : { text : "Apagar Minha Conta" },
 });
 
@@ -39,9 +44,11 @@ $.configList.addEventListener('itemclick', function(e){
 		    Alloy.Globals.openWindow({name: "menu/conta/produtor" });
 		    break;
 		case 3:
-		    Alloy.Globals.openWindow({name: "menu/conta/deletar"});
+		    Alloy.Globals.openWindow({name: "menu/conta/nivel" });
 		    break;
-		    		    
+		case 4:
+		    Alloy.Globals.openWindow({name: "menu/conta/deletar"});
+		    break;		    		    
 		default:
 		    break;
 		}

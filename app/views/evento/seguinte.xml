@@ -1,5 +1,5 @@
 <Alloy>
-	<View class="container navigation-white vert">		
+	<Window class="container navigation-white vert">		
 		<View height="60dp" top="0dp" width="100%" backgroundColor="#9a003a" layout="Vertical"> 
     		<View height="20dp"  width="100%"></View>
     		<View height="40dp">
@@ -9,37 +9,41 @@
 	    </View>
 	    <ScrollView class="vert">
 	    	<!-- Atração -->
-	    	<Button left="20dp" width="30dp" height="25dp" backgroundColor="0aa3b1" color="#FFF" bottom="5dp" top="10dp" image="/system/icones/plus2.png"></Button>
-	    	<View id="_cAtracao" left="20dp" right="20dp" class="vert" height="60dp" bottom="20dp">
-	    		<View height="30dp">
-	    			<ImageView left="0" zIndex="1" image="/system/background/itens-eventos.png" width="35dp" height="30dp">
-	    				<ImageView image="/system/icones/user-group.png" left="5dp" width="17dp" height="17dp"></ImageView>
-	    			</ImageView>
-	    			<TextField left="28dp" paddingLeft="15dp" top="0dp" right="35dp" hintText="Atração" backgroundColor="#e5e5e5" height="30dp" class="input-text bold font-12"></TextField>
-	    		</View>
-	    		<View height="30dp" top="10dp">
-	    			<TextField left="28dp" paddingLeft="15dp" top="0dp" right="35dp" hintText="Estilo" backgroundColor="#e5e5e5" height="30dp" class="input-text bold font-12"></TextField>
-	    			<View right="0" width="30dp" height="30dp" backgroundColor="#be0d4f"> 
-	    				<ImageView width="17dp" height="17dp"  image="/system/icones/arrow-down.png"></ImageView>
-	    			</View>
-	    		</View>
-	    	</View>
-		    
+	    	<Button left="20dp" width="30dp" height="25dp" backgroundColor="0aa3b1" color="#FFF" bottom="5dp" top="10dp" onClick="newAtracao"><ImageView image="/system/icones/plus2.png" width="20dp" height="20dp"></ImageView></Button>
+	    	<View class="vert" id="contentAtracao" height="80dp">
+		    	<!--View id="_cAtracao" left="20dp" right="20dp" class="vert" height="60dp">		    		
+		    		<View height="30dp">
+		    			<ImageView left="0" zIndex="1" image="/system/background/itens-eventos.png" width="35dp" height="30dp">
+		    				<ImageView image="/system/icones/user-group.png" left="5dp" width="17dp" height="17dp"></ImageView>
+		    			</ImageView>
+		    			<TextField left="28dp" paddingLeft="15dp" top="0dp" right="35dp" hintText="Atração" backgroundColor="#e5e5e5" height="30dp" class="input-text bold font-12"></TextField>
+		    		</View>
+		    		
+		    		<View height="30dp" top="10dp">
+		    			<TextField left="28dp" paddingLeft="15dp" top="0dp" right="35dp" hintText="Estilo" backgroundColor="#e5e5e5" height="30dp" class="input-text bold font-12"></TextField>
+		    			<View right="0" width="30dp" height="30dp" backgroundColor="#be0d4f"> 
+		    				<ImageView width="17dp" height="17dp"  image="/system/icones/arrow-down.png"></ImageView>
+		    			</View>
+		    		</View>		    		
+		    	</View-->
+		    	
+		    </View>
 		    <!-- Ingresso -->
-		    <Button left="20dp" width="30dp" height="25dp" backgroundColor="0aa3b1" color="#FFF" bottom="5dp" top="10dp" image="/system/icones/plus2.png"></Button>
-	    	<View id="_cAtracao" left="20dp" right="20dp" class="vert" height="60dp" bottom="20dp">
-	    		<View height="30dp">
-	    			<ImageView left="0" zIndex="1" image="/system/background/itens-eventos.png" width="35dp" height="30dp">
-	    				<ImageView image="/system/icones/ticket.png" left="5dp" width="17dp" height="17dp"></ImageView>
-	    			</ImageView>
-	    			
-	    			<TextField left="28dp" paddingLeft="15dp"  top="0dp" width="102dp" hintText="Valor" backgroundColor="#e5e5e5" height="30dp" class="input-text bold font-12"></TextField>
-	    			<TextField left="138dp" paddingLeft="15dp"  top="0dp" width="107dp" hintText="Tipo" backgroundColor="#e5e5e5" height="30dp" class="input-text bold font-12"></TextField>
-	    		</View>
-	    		<TextField left="0dp" height="30dp" paddingLeft="5dp" top="10dp" right="35dp" hintText="Descrição" backgroundColor="#e5e5e5" class="input-text bold font-12"></TextField>
-	    	</View>
-	    	
-	    	<Button left="20dp" right="20dp" backgroundColor="0aa3b1" color="#FFF">CONCLUIR</Button>	
+		    <Button left="20dp" width="30dp" height="25dp" backgroundColor="0aa3b1" color="#FFF" bottom="5dp" top="10dp" onClick="newIngresso"><ImageView image="/system/icones/plus2.png" width="20dp" height="20dp"></ImageView></Button>
+		    <View class="vert" id="contentIngresso" height="80dp" bottom="10dp">
+		    	<!--<View id="_cIngresso" left="20dp" right="20dp" class="vert" height="60dp" bottom="20dp">
+		    		<View height="30dp">
+		    			<ImageView left="0" zIndex="1" image="/system/background/itens-eventos.png" width="35dp" height="30dp">
+		    				<ImageView image="/system/icones/ticket.png" left="5dp" width="17dp" height="17dp"></ImageView>
+		    			</ImageView>
+		    			
+		    			<TextField left="28dp" paddingLeft="15dp"  top="0dp" width="102dp" hintText="Valor" backgroundColor="#e5e5e5" height="30dp" class="input-text bold font-12"></TextField>
+		    			<TextField left="138dp" paddingLeft="15dp"  top="0dp" width="107dp" hintText="Tipo" backgroundColor="#e5e5e5" height="30dp" class="input-text bold font-12"></TextField>
+		    		</View>
+		    		<TextField left="0dp" height="30dp" paddingLeft="5dp" top="10dp" right="35dp" hintText="Descrição" backgroundColor="#e5e5e5" class="input-text bold font-12"></TextField>
+		    	</View> -->
+		    </View>
+	    	<Button left="20dp" right="20dp" backgroundColor="0aa3b1" color="#FFF" onClick="concluirClick">CONCLUIR</Button>	
 	    </ScrollView>
-	</View>
+	</Window>
 </Alloy>

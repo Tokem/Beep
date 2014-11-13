@@ -1,5 +1,5 @@
 <Alloy>
- 	<Window id="winRegister"  class="container navigation-white vert">
+ 	<Window  class="container navigation-white vert">
  		<View height="60dp" top="0dp" width="100%" backgroundColor="#9a003a" layout="Vertical"> 
     		<View height="20dp"  width="100%"></View>
     		<View height="40dp">
@@ -7,5 +7,24 @@
     			<Label class="title-head white">Localização</Label>
     		</View>
 	    </View>
+	    <ScrollView class="vert">
+	    	<View top="20dp" height="40dp" left="20dp" right="20dp" backgroundColor="#e5e5e5" borderRadius="4dp">
+	    		<TextField id="addressField" left="10dp" right="40dp" hintText="Endereço"></TextField>
+	    		<View width="1dp" height="70%" backgroundColor="#bfbfbf" right="39dp" ></View>
+	    		<Button width="28dp" height="28dp" right="5dp" image="" onClick="getCoordsClick" image="/system/icones/search_gray.png"></Button>
+	    	</View>
+	    	<Module id="mapview" module="ti.map" method="createView" top="10dp" left="20dp" right="20dp" height="200dp" >
+       		</Module>
+	    	<View top="10dp" class="vert" backgroundColor="#e5e5e5" borderRadius="4dp" height="122dp" left="20dp" right="20dp">
+				<Label top="10dp" bottom="10dp" height="20dp" class="font-12" id="rua">Rua, Avenida...</Label>
+				<View width="80%"  height="1dp" backgroundColor="#bfbfbf"></View>
+				<Label top="10dp" bottom="10dp" height="20dp" class="font-12" id="bairro">Bairro </Label>
+				<View width="80%"  height="1dp" backgroundColor="#bfbfbf"></View>
+				<Label top="10dp" bottom="10dp" height="20dp" class="font-12" id="estado">Cidade, Estado..</Label>
+	    	</View>
+	    	<Button left="20dp" right="20dp" top="20dp" backgroundColor="0aa3b1" color="#FFF" >Adicionar Manualmente</Button>	
+	    	
+	    	<Button top="20dp" left="20dp" right="20dp" borderRadius="4dp" backgroundColor="#be0d4f" class="title-head white" onClick="concluirClick">Concluir</Button>
+	    </ScrollView>
 	 </Window>
 </Alloy>

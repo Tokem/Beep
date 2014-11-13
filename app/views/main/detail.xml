@@ -18,11 +18,32 @@
 			</View>
 			
 			<View class="hor" top="10dp" height="20dp" >
-				<Button width="33%" height="20dp"><ImageView image="/system/icones/detail_list.png" width="20dp" height="20dp"></ImageView></Button>
-				<Button width="33%" height="20dp"><ImageView image="/system/icones/info.png" width="20dp" height="20dp"></ImageView></Button>
-				<Button width="33%" height="20dp" ><ImageView image="/system/icones/shared.png" width="20dp" height="20dp"></ImageView></Button>
+				<Button width="33%" height="20dp" onTouchstart="switchButton" btn="list" >
+					<ImageView image="/system/icones/detail_list.png" width="20dp" height="20dp"  id="_list"></ImageView></Button>
+						
+				<Button width="33%" height="20dp" onTouchstart="switchButton" btn="info">
+					<ImageView image="/system/icones/info.png" width="20dp" height="20dp" opacity="0.5" id="_info"></ImageView></Button>
+						
+				<Button width="33%" height="20dp" onTouchstart="switchButton" btn="shared">
+					<ImageView image="/system/icones/shared.png" width="20dp" height="20dp" opacity="0.5"  id="_shared"></ImageView></Button>
 			</View>
 		</View>
+		
 		<View class="border" ></View>
+		<!-- Detalhes de switch button-->
+		<ScrollableView id="scrollview" showPagingControl="false" backgroundColor="#FFF" scrollingEnabled="true">
+			<View id="_scrollLista">
+				<Label>
+					View 1
+				</Label>
+			</View>
+			
+			<View id="_scrollInfo">
+				<Label>
+					View 2
+				</Label>
+			</View>		
+		</ScrollableView>
+		<!-- End -->
 	</Window>
 </Alloy>

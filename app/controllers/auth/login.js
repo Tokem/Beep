@@ -1,7 +1,25 @@
 var args = arguments[0] || {};
 
+var db = require('db');
+var Usuario = new db.Usuario();
+
 function cancelarClick(){
  	Alloy.Globals.closeWindow();
+}
+
+function entrarClick(){
+	Alloy.Globals.Validation.run([{
+		id: 'loginField',
+	    value: $.loginField.value,
+	    display: 'Email',    
+	    rules: 'required|valid_email'
+	},
+	{
+		id: 'passwordField',
+	    value: $.passwordField.value,
+	    display: 'Senha',    
+	    rules: 'required|alpha_numeric'
+	}], validationCallback);	
 }
 
 var validationCallback = function(errors) {
@@ -11,22 +29,20 @@ var validationCallback = function(errors) {
 		}
 		alert(errors[0].message);
 	} else {
-		Alloy.Globals.Util.login($.login.value, $.password.value, function(data){
-			if(data.msg == "success"){
-				Alloy.Globals.openWindow({name: "main"});
+		Alloy.Globals.Util.login($.loginField.value, $.passwordField.value, function(result){
+			if(result.msg == "success"){
+				
+				result.data.email = $.loginField.value;
+				result.data.nome = "daniel da teste";
+				result.data.senha = $.passwordField.value;
+				
+				if(Usuario.save(result.data)){
+					Alloy.Globals.openWindow({name: "main"});
+				}
 			}
 		});
 	}
 };
-
-function entrarClick(){
-	Alloy.Globals.Validation.run([{
-		id: 'emailField',
-	    value: $.login.value,
-	    display: 'Email',    
-	    rules: 'required|valid_email'
-	}], validationCallback);	
-}
 
 function facebookClick(){
 	Alloy.Globals.openWindow({name: "auth/facebook"});

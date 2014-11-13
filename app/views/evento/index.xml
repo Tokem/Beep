@@ -15,14 +15,14 @@
 	    			<ImageView left="0" zIndex="1" image="/system/background/itens-eventos.png" width="35dp" height="30dp">
 	    				<ImageView image="/system/icones/edit.png" left="0dp" width="30dp" height="17dp"></ImageView>
 	    			</ImageView>
-	    			<TextField left="28dp" paddingLeft="15dp" top="0dp" right="0dp" hintText="Nome da Festa" backgroundColor="#e5e5e5" height="30dp" class="input-text bold font-12"></TextField>
+	    			<TextField id="name_festaField" left="28dp" paddingLeft="15dp" top="0dp" right="0dp" hintText="Nome da Festa" backgroundColor="#e5e5e5" height="30dp" class="input-text bold font-12"></TextField>
 	    		</View>
 	    		
 	    		<View height="30dp" top="5dp">
 	    			<ImageView left="0" zIndex="1" image="/system/background/itens-eventos.png" width="35dp" height="30dp">
 	    				<ImageView image="/system/icones/sharp.png" left="5dp" width="17dp" height="17dp"></ImageView>
 	    			</ImageView>
-	    			<TextField left="28dp" paddingLeft="15dp" top="0dp" right="0dp" hintText="Tag da Festa" backgroundColor="#e5e5e5" height="30dp" class="input-text bold font-12"></TextField>
+	    			<TextField id="tag_festaField" left="28dp" paddingLeft="15dp" top="0dp" right="0dp" hintText="Tag da Festa" backgroundColor="#e5e5e5" height="30dp" class="input-text bold font-12"></TextField>
 	    		</View>
 
 	    		<View top="10dp" height="100dp">
@@ -31,72 +31,80 @@
 		    		</View>
 		    		
 		    		<View left="110dp" width="170dp" top="0dp" height="100%">
-		    			<ImageView left="0" top="0dp" zIndex="1" image="/system/background/itens-eventos.png" width="65dp" height="30dp">
+		    			// Data do evento
+		    			<ImageView left="0" top="0dp" zIndex="1" image="/system/background/itens-eventos.png" width="35dp" height="30dp">
 		    				<ImageView image="/system/icones/calendar2.png" left="5dp" width="17dp" height="17dp"></ImageView>
-		    				<Label class="font-12 white bold" left="25dp"></Label>
 		    			</ImageView>
-		    			<Label left="50dp" onClick="showPicker" top="0dp" right="0dp" backgroundColor="#e5e5e5" height="30dp" class="input-text bold font-12 right"> </Label>
-
-						<ImageView width="17dp" height="17dp" image="/system/icones/time.png" zIndex="1" top="47dp" left="10dp"></ImageView>
+		    			<View left="50dp" onClick="showPicker" tipo="date" top="0dp" right="0dp" backgroundColor="#e5e5e5" height="30dp"> 
+		    				<Label class="input-text bold font-12" top="0dp" id="dataLabel" left="15dp">00/00/0000 </Label>
+		    			</View>
+		    			
+						//Horario de Inicio do evento
+						<ImageView left="0" top="40dp" zIndex="1" image="/system/background/itens-eventos.png" width="35dp" height="30dp">
+		    				<ImageView image="/system/icones/time.png" left="5dp" width="17dp" height="17dp" ></ImageView>
+		    			</ImageView>		    			
+		    			
 		    			<!--TextField left="0dp" paddingLeft="50dp" top="40dp" right="0dp" hintText="00:00:00" backgroundColor="#e5e5e5" height="30dp" class="input-text bold font-12"></TextField -->
-		    			<Label left="50dp" onClick="showPicker" top="40dp" right="0dp" backgroundColor="#e5e5e5" height="30dp" class="input-text bold font-12"> </Label>
+		    			<View left="50dp" onClick="showPicker" tipo="time" top="40dp" right="0dp" backgroundColor="#e5e5e5" height="30dp">
+		    				<Label class="input-text bold font-12" top="0dp" id="timeLabel" left="15dp">00:00:00 </Label>		    				
+		    			</View>
 
-		    			<View class="hor" width="100%" top="80dp" height="30dp">
+		    			<View class="hor" width="100%" top="80dp" height="30dp" onClick="localizacaoClick">
 		    				<ImageView image="/system/icones/location.png" width="17dp" height="17dp"></ImageView>
-		    				<Label left="5dp" class="font-12 300 link center" width="70dp"> Localização <View left="0dp" height="1dp" bottom="0dp" backgroundColor="#00ccff"></View></Label>
+		    				<Label left="5dp" class="font-12 300 link center" width="70dp" id="localizacaoLabel"> Localização <View left="0dp" height="1dp" bottom="0dp" backgroundColor="#00ccff"></View></Label>
 		    			</View>
 		    		</View>
 	    		</View>
 				<!-- Tipo  de Festa -->				
-				<View top="30dp" height="100dp" class="vert">
+				<View top="30dp" height="180dp" class="vert">
 					<Label class="font-14 300 gray left" width="100%"> Tipo de festa: </Label>					
 					<View width="100%">	
 						<!-- Left -->					
 						<View id="show" width="50%" height="30dp" left="0dp" top="0dp">	
 							<View width="14dp" height="14dp" backgroundColor="#CCC" left="0dp" borderRadius="7dp">
-								<View width="12dp" height="12dp" backgroundColor="#FFF" borderRadius="6dp"></View>
+								<View width="12dp" height="12dp" backgroundColor="#FFF" borderRadius="6dp" id="_show" selected="false"></View>
 							</View>
 							<Label class="font-12 gray 300" left="16dp"> Casa de Show</Label>
 						</View>
 						
 						<View id="bar" width="50%" height="30dp" left="0dp" top="30dp">
 							<View width="14dp" height="14dp" backgroundColor="#CCC" left="0dp" borderRadius="7dp">
-								<View width="12dp" height="12dp" backgroundColor="#FFF" borderRadius="6dp"></View>
+								<View width="12dp" height="12dp" backgroundColor="#FFF" borderRadius="6dp" id="_bar" selected="false"></View>
 							</View>
 							<Label class="font-12 gray 300" left="16dp"> Bar</Label>
 						</View>
 						
 						<View id="boate" width="50%" height="30dp" left="0dp" top="60dp">	
 							<View width="14dp" height="14dp" backgroundColor="#CCC" left="0dp" borderRadius="7dp">
-								<View width="12dp" height="12dp" backgroundColor="#FFF" borderRadius="6dp"></View>
+								<View width="12dp" height="12dp" backgroundColor="#FFF" borderRadius="6dp" id="_boate" selected="false"></View>
 							</View>
 							<Label class="font-12 gray 300" left="16dp"> Boate </Label>
 						</View>
 
 						<View id="casa" width="50%" height="30dp" left="0dp" top="90dp">	
 							<View width="14dp" height="14dp" backgroundColor="#CCC" left="0dp" borderRadius="7dp">
-								<View width="12dp" height="12dp" backgroundColor="#FFF" borderRadius="6dp"></View>
+								<View width="12dp" height="12dp" backgroundColor="#FFF" borderRadius="6dp" id="_casa" selected="false"></View>
 							</View>
 							<Label class="font-12 gray 300" left="16dp"> Festinha em casa</Label>
 						</View>
 						<!-- Right -->
 						<View id="recepcao" width="50%" height="30dp" right="0dp" top="0dp">	
 							<View width="14dp" height="14dp" backgroundColor="#CCC" left="0dp" borderRadius="7dp">
-								<View width="12dp" height="12dp" backgroundColor="#FFF" borderRadius="6dp"></View>
+								<View width="12dp" height="12dp" backgroundColor="#FFF" borderRadius="6dp" id="_recepcao" selected="false"></View>
 							</View>
 							<Label class="font-12 gray 300" left="16dp"> Casa de recepção</Label>
 						</View>
 						
 						<View id="rua" width="50%" height="30dp" right="0dp" top="30dp">	
 							<View width="14dp" height="14dp" backgroundColor="#CCC" left="0dp" borderRadius="7dp">
-								<View width="12dp" height="12dp" backgroundColor="#FFF" borderRadius="6dp"></View>
+								<View width="12dp" height="12dp" backgroundColor="#FFF" borderRadius="6dp" id="_rua" selected="false"></View>
 							</View>
 							<Label class="font-12 gray 300" left="16dp"> Rua</Label>
 						</View>
 						
 						<View id="praia" width="50%" height="30dp" right="0dp" top="60dp">	
 							<View width="14dp" height="14dp" backgroundColor="#CCC" left="0dp" borderRadius="7dp">
-								<View width="12dp" height="12dp" backgroundColor="#FFF" borderRadius="6dp"></View>
+								<View width="12dp" height="12dp" backgroundColor="#FFF" borderRadius="6dp" id="_praia" selected="false"></View>
 							</View>
 							<Label class="font-12 gray 300" left="16dp"> Praia</Label>
 						</View>
@@ -104,8 +112,9 @@
 					</View>
 				</View>	    	
 	    	</View>
-	    	<Button left="20dp" right="20dp" backgroundColor="0aa3b1" color="#FFF" >SEGUINTE <ImageView right="2dp" image="/system/icones/arrow-right.png" width="20dp" height="20dp"></ImageView></Button>	
+	    	<Button left="20dp" right="20dp" backgroundColor="0aa3b1" color="#FFF" onClick="continueClick">SEGUINTE <ImageView right="2dp" image="/system/icones/arrow-right.png" width="20dp" height="20dp"></ImageView></Button>	
 	    </ScrollView>
+	    
 	    <!-- Date Picker -->
 	    <View id="datePickerView" top="0dp" height="258p" class="vert" backgroundColor="#FFF">
 	    	<View class="border"></View>
@@ -114,10 +123,11 @@
 	    		<Button right="10dp" class="link" onClick="confirmPicker"> OK </Button>
 	    	</View>
 	    	<View class="border"></View>
-		    <Picker id="picker"
-	          type="Ti.UI.PICKER_TYPE_DATE"
-	          minDate="2014,4,1">
+	    	
+		    <Picker id="pickerField" type="Ti.UI.PICKER_TYPE_DATE" minDate="2014,4,1">
 	        </Picker>
 	    </View>
+	     <!-- End Date Picker -->
+	     
 	</View>
 </Alloy>

@@ -2,13 +2,13 @@
 	<View class="container" width="250dp" left="0" top="0" backgroundColor="#FFF" layout="vertical" >
 		<View backgroundColor="#f2f2f2" height="99dp" layout="horizontal">
 			<View width="50dp" height="100dp" left="30dp" >
-				<ImageView width="60dp" height="60dp" image="/system/background/user.png"></ImageView>
-				<ImageView width="60dp" height="60dp" image="/system/background/mascara.png"></ImageView>
+				<ImageView width="60dp" height="60dp" image="/system/background/user.png" borderRadius="30dp"></ImageView>
+				<ImageView width="25dp" height="30dp" bottom="20dp" right="-10dp" image="/system/nivel/gold.png"></ImageView>				
 			</View>
 			<View width="170dp" height="40dp" layout="vertical" >
 				<Label class="titulo left" width="80%"> André morette</Label>		
-				<Label class="subtitulo left"  width="80%"> Usuário ouro </Label>	
-				<Label class="subtitulo left"  width="80%"> 3700 beeps </Label>	
+				<Label class="subtitulo left bold"  width="80%" color="#ffde5d"> Beep gold </Label>	
+				<Label class="subtitulo left"  width="80%"> 3.700 beeps </Label>	
 			</View>
 		</View>
 	 	<ListView id="menuList" left="-15dp" defaultItemTemplate="template" separatorStyle="Titanium.UI.iPhone.ListViewSeparatorStyle.NONE">

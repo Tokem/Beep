@@ -5,9 +5,9 @@
 		<View left="30dp" right="30dp" top="20dp" bottom="20dp" class="vert">
 			<View height="90dp" backgroundImage="/system/background/bg-login.png" class="vert">
 				
-				<TextField id="login" value="daniel.dms.23@gmail.com" class="input-text bold font-12" hintText="Email" top="10dp"></TextField>
+				<TextField id="loginField" value="daniel.dms.23@gmail.com" class="input-text bold font-12" hintText="Email" top="10dp"></TextField>
 				<View left="15dp" right="15dp" height="1dp" top="5dp" bottom="5dp" backgroundColor="#dddbdb"></View>
-				<TextField passwordMask="true" value="dmsqwe123" id="password" class="input-text bold font-12" hintText="Password"></TextField>
+				<TextField passwordMask="true" value="dmsqwe123" id="passwordField" class="input-text bold font-12" hintText="Password"></TextField>
 			</View>	
 					
 			<View top="30dp" height="30dp">
@@ -15,7 +15,7 @@
 				<Button class="btn-confirm font-12 bold input-button" onClick="entrarClick">Entrar</Button>
 			</View>
 			
-			<Button class="font-11 white bold forgot input-button" > Esqueci minha senha</Button>
+			<Button class="font-11 bold forgot input-button white" width="130dp" color="#FFF"> Esqueci minha senha <View width="100%" backgroundColor="#FFF" height="1dp" bottom="0dp"></View></Button>
 			<Button class="login-fb font-12" onClick="facebookClick"></Button>
 			<LoginButton id="fbButton" ns="Alloy.Globals.Facebook"></LoginButton>
 		</View>

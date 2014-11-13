@@ -1,11 +1,18 @@
 var _screen = []; var _contentScreen = [];
 Alloy.Globals.toogle = false;
 Alloy.Globals.main;
+
+// Plugin Database
+
+//Plugin de Utilidades
 Alloy.Globals.Util = require('util');
+Alloy.Globals.Map = require('ti.map');
+
+//Plugin Validação
 var validate = require('hdjs.validate');
+Alloy.Globals.Validation =  new validate.FormValidator();
 
-Alloy.Globals.Validation =  new validate.FormValidator();;
-
+//Plugin Facebook
 Alloy.Globals.Facebook = require('facebook');
 
 // Animacao para esquerda
@@ -22,18 +29,17 @@ Alloy.Globals.animateRight    = Ti.UI.createAnimation({
     duration: 500
 });
 
-
-//Inicializa o conteudo
+//Inicializa o conteudo, setando a content da tela principal
 var _content = null;
 Alloy.Globals.setContent = function(content){
 	_content = content;
 };
 
 //Abre uma nova janela
-Alloy.Globals.openWindow = function(screen){
+Alloy.Globals.openWindow = function(screen, params){
 	if(screen.subview){
 		var current = _screen[_screen.length -1];
-		var win = Alloy.createController(screen.name).getView();
+		var win = Alloy.createController(screen.name, params).getView();
 		current.openWindow(win, {animated : true});	
 		_screen.push(win);			
 	}else{
@@ -57,6 +63,17 @@ Alloy.Globals.openContent = function(screen){
 	}
 };
 
+//
+var currentButtonTouched = '';
+Alloy.Globals.buttonImageTouched = function(e){
+	if(!currentButtonTouched){
+		e.source.opacity = '0.5';
+		currentButtonTouched = e.source;
+	}else{
+		currentButtonTouched.opacity = '1';
+		currentButtonTouched = '';
+	}
+};
 
 // Abre o conteudo interno dos menus
 Alloy.Globals.closeContent = function(){	
@@ -94,4 +111,50 @@ Alloy.Globals.openMenu = function(){
 		_content.animate(Alloy.Globals.animateRight);
 		Alloy.Globals.toogle = false;
 	}		
+};
+
+
+var loading = false;
+var win;
+Alloy.Globals.preload = function(){
+	if(!loading){
+		if(!win){
+			win = Ti.UI.createWindow({
+				backgroundColor:"transparent"
+			});
+			var view = Ti.UI.createView({
+				width:"50%", height: "20%",
+				backgroundImage: "system/background/opacity.png",
+				borderRadius: "10dp"	
+			});
+			
+			var style;
+			if (Ti.Platform.name === 'iPhone OS'){
+			  style = Ti.UI.iPhone.ActivityIndicatorStyle.DARK;
+			}
+			else {
+			  style = Ti.UI.ActivityIndicatorStyle.DARK;
+			}
+			var activityIndicator = Ti.UI.createActivityIndicator({
+			  color: 'green', style:style
+			});
+			view.add(activityIndicator);
+			win.add(view);
+			activityIndicator.show();
+		}
+		win.open();
+		loading = true;
+	}else{
+		win.close();	
+		loading = false;	
+	}
+};
+
+Alloy.Globals.showAlert = function(msg){
+	var dialog = Ti.UI.createAlertDialog({
+		message: msg,
+		 ok: 'OK',
+		 title: 'Beep!'
+	});
+	dialog.show();
 };

@@ -3,15 +3,17 @@
 		<View width="100%" id="mask" top="0dp" height="100%" backgroundImage="/system/background/opacity.png" zIndex="1" visible="false"  layout="Vertical">
 			<View height="20dp"  width="100%"></View>
 			<View height="40dp">
-				<Button left="5dp" zIndex="4" height="20dp" width="40dp" onClick="openMenu" image="/system/icones/menu.png"> </Button>
-				<Label class="title-head gray">Visão Geral</Label>
+				<Button left="5dp" zIndex="4" height="20dp" width="40dp" image="/system/icones/menu.png"> </Button>
+				<Label class="title-head gray">Geral</Label> 
 			</View>	    	
-		</View>       	
+		</View>  
+		<!-- Navigation Bar -->     	
 		<View height="60dp" top="0dp" width="100%" backgroundColor="#FFFFFF" layout="Vertical"  zIndex="2"> 
 			<View height="20dp"  width="100%"></View>
-			<View height="40dp">
-				<Button left="5dp" zIndex="4" height="20dp" width="40dp" onClick="openMenu"><ImageView image="/system/icones/menu.png"></ImageView></Button>
+			<View height="40dp">  
+				<Button left="5dp" zIndex="4" height="20dp" width="40dp" onClick="openMenu" onTouchstart="Alloy.Globals.buttonImageTouched" onTouchend="Alloy.Globals.buttonImageTouched"><ImageView image="/system/icones/menu.png"></ImageView></Button>
 				<Label class="title-head gray">Visão Geral</Label>
+				<Button right="5dp" height="20dp" width="40dp" onClick="openMenu"><ImageView image="/system/icones/message.png"></ImageView><View id="alertNotification"></View></Button>
 			</View>
 		</View> 
 		
@@ -19,14 +21,14 @@
 		
 		<View>	  
 	    	<View backgroundColor="#f2f2f2" height="36dp" top="61dp" class="hor">
-				<Button width="33%" height="36dp"icon="geral">
-					<View  backgroundImage="/system/icones/geral.png" enabled="true" width="20dp" height="20dp" tintColor="#FFF"></View>
+				<Button width="33%" height="36dp" onTouchstart="switchButton" btn="geral">
+					<View  backgroundImage="/system/icones/geral.png" width="20dp" height="20dp" tintColor="#FFF" id="_geral"></View>
 				</Button>
-				<Button width="33%" height="36dp"icon="geral">
-					<View  backgroundImage="/system/icones/calendar_inactive.png" enabled="true" width="20dp" height="20dp" tintColor="#FFF"></View>
+				<Button width="33%" height="36dp" onTouchstart="switchButton" btn="calendar">
+					<View  backgroundImage="/system/icones/calendar.png" opacity="0.5" width="20dp" height="20dp" id="_calendar"></View>
 				</Button>
-				<Button width="33%" height="36dp"icon="geral">
-					<View  backgroundImage="/system/icones/time_inactive.png" enabled="true" width="20dp" height="20dp" tintColor="#FFF"></View>
+				<Button width="33%" height="36dp" onTouchstart="switchButton" btn="time">
+					<View  backgroundImage="/system/icones/time.png" opacity="0.5" width="20dp" height="20dp" id="_time"></View>
 				</Button>
 	    	</View>
 	    	
@@ -144,9 +146,7 @@
 		
 		<View backgroundColor="#696969" height="25dp" bottom="0dp" class="vert">
 			<View  top="-25dp" backgroundColor="#696969" width="50dp" height="50dp" borderRadius="25dp" >
-		
-					<Button height="40dp" width="40dp" borderRadius="20dp" backgroundColor="#000"><ImageView image="/system/icones/qrcode.png" width="20dp" height="20dp" tintColor="#000"></ImageView></Button>
-
+				<Button height="40dp" width="40dp" borderRadius="20dp" backgroundColor="#FFF"><ImageView image="/system/icones/qrcode.png" width="20dp" height="20dp"></ImageView></Button>
 			</View>
 		</View>
 		

@@ -24,7 +24,7 @@ items.push({
 
 items.push({
     label : { text : "Beep!" },
-	icon: { image:"/system/icones/perfil.png", height: iconHeight, left: '30dp'	}
+	icon: { image:"/system/icones/beep-gray.png", height: iconHeight, left: '30dp'	}
 });
 
 $.section.setItems(items);

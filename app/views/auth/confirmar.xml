@@ -1,0 +1,23 @@
+<Alloy>
+    <Window barColor="#be0e4f" backgroundColor="#be0d4f" class="vert">
+    	<ImageView height="150dp" width="100dp" top="50dp" image="/system/logo.png"></ImageView>
+    	
+		<View left="30dp" right="30dp" top="20dp" bottom="20dp" class="vert">
+			
+			<View height="142dp" backgroundImage="/system/background/bg-login.png" class="vert">				
+				<TextField id="primeiroField" class="input-text bold font-12" hintText="Primeiro nome" top="10dp"></TextField>
+				<View left="15dp" right="15dp" height="1dp" top="5dp" bottom="5dp" backgroundColor="#dddbdb"></View>
+				
+				<TextField id="ultimoField" class="input-text bold font-12" hintText="Último nome"></TextField>
+				<View left="15dp" right="15dp" height="1dp" top="5dp" bottom="5dp" backgroundColor="#dddbdb"></View>
+				
+				<TextField value="" id="emailField" class="input-text bold font-12" hintText="Email" ></TextField>
+			</View>	
+					
+			<View top="30dp" height="30dp">
+				<Button class="btn-cancel font-12 bold input-button" onClick="cancelarClick" >Cancelar</Button>
+				<Button class="btn-confirm font-12 bold input-button radius" onClick="continuarClick" backgroundColor="0aa3b1" color="#FFF">Continuar</Button>
+			</View>
+		</View>
+    </Window>
+</Alloy>

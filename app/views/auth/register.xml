@@ -12,21 +12,22 @@
 			<View left="30dp" right="30dp" top="40dp" class="vert">
 				
 				<View height="165dp" backgroundImage="/system/background/bg-login.png" layout="vertical">
-					<TextField id="username" hintText="Usuário" class="font-11 input-text"></TextField>
+					<TextField id="usernameField" hintText="Usuário" class="font-11 input-text"></TextField>
 					<View left="15dp" right="15dp" height="1dp" bottom="5dp" top="0dp" backgroundColor="#dddbdb"></View>
 					
-					<TextField id="email" hintText="Email" class="font-11 input-text" ></TextField>
+					<TextField id="emailField" hintText="Email" class="font-11 input-text" ></TextField>
 					<View left="15dp" right="15dp" height="1dp" bottom="5dp" top="0dp" backgroundColor="#dddbdb"></View>
 					
-					<TextField id="password" passwordMask="true" hintText="Senha" class="font-11 input-text" ></TextField>
+					<TextField id="passwordField" passwordMask="true" hintText="Senha" class="font-11 input-text" ></TextField>
 					<View left="15dp" right="15dp" height="1dp" bottom="5dp" top="0dp" backgroundColor="#dddbdb"></View>
 					
-					<TextField  passwordMask="true" id="repassword" hintText="Confirmar senha" class="font-11 input-text" ></TextField>
+					<TextField  passwordMask="true" id="repasswordField" hintText="Confirmar senha" class="font-11 input-text" ></TextField>
 				</View>	
 										
-				<View width="100%" class="hor" height="20dp" top="30dp">
-					<View width="15dp" height="15dp" right="10dp" backgroundColor="#FFF">
-						<ImageView image="/system/icones/checked.png"></ImageView>
+				<View width="100%" class="hor" height="20dp" top="30dp" onClick="termosClick">
+					<View width="20dp" height="10dp" left="10dp">
+						<View width="10dp" height="10dp" right="10dp" backgroundColor="#FFF"></View>						
+						<ImageView width="15dp" height="15dp" bottom="0dp" right="5dp" id="_termos"  image="/system/icones/checked.png" visible="false"></ImageView>
 					</View>
 					<Label class="font-11 white bold"> Li e concordo com os termos e condições</Label>
 				</View>

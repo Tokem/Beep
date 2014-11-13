@@ -8,6 +8,7 @@
 
 // Others
 ".border":{ width: "100%", backgroundColor: "#d2d2d2", height: '1dp'},
+".radius": {borderRadius: "3dp"},
 
 //Aligns
 ".left": { textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT },
@@ -64,3 +65,6 @@
 ".input-button": {font: {fontFamily:"MuseoSans-500" } },
 ".input-title": {font: {fontFamily:"MuseoSans-700" } },
 
+
+//Ids
+"#alertNotification": {width:"6dp", height:"6dp", borderRadius:"3dp", backgroundColor:"fe7d0a", right:"6dp", top:"0dp"},
